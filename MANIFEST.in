@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include masar_portal_oldtimer *.css
+recursive-include masar_portal_oldtimer *.csv
+recursive-include masar_portal_oldtimer *.html
+recursive-include masar_portal_oldtimer *.ico
+recursive-include masar_portal_oldtimer *.js
+recursive-include masar_portal_oldtimer *.json
+recursive-include masar_portal_oldtimer *.md
+recursive-include masar_portal_oldtimer *.png
+recursive-include masar_portal_oldtimer *.py
+recursive-include masar_portal_oldtimer *.svg
+recursive-include masar_portal_oldtimer *.txt
+recursive-exclude masar_portal_oldtimer *.pyc
