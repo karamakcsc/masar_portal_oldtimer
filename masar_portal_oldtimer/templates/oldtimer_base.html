@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{% block title %}{% endblock %}OldTimer</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="shortcut icon"
+      href="/assets/masar_portal_oldtimer/oldtimer/image/Logo1.png"
+      type="image/x-icon"
+    >
+
+  <link rel="shortcut icon" href="">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gw UOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+  <link rel="stylesheet" type="text/css" href="/assets/masar_portal_oldtimer/oldtimer/css/style-home.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/masar_portal_oldtimer/oldtimer/css/header-footer-style.css"/>
+
+  <link rel="stylesheet" type="text/css" href="/assets/masar_portal_oldtimer/oldtimer/css/animate.css" />
+
+  <link rel="stylesheet" href="/assets/masar_portal_oldtimer/oldtimer/css/jquery.morecontent.css">
+  <link rel="stylesheet" href="/assets/masar_portal_oldtimer/oldtimer/css/demo.css">
+<style>
+
+</style>
+</head>
+<style>
+    .section1{
+        background-image: url(/assets/masar_portal_oldtimer/oldtimer/image/37262.png);
+        background-repeat: repeat;
+        background-position: center;
+        background-size: cover;
+        height:709px;
+    }
+    @media(max-width:767.5px){
+        .section1{
+            display: block!important;
+            position: unset!important;
+        }
+    }
+
+</style>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand" id="desktop-nav">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="/assets/masar_portal_oldtimer/oldtimer/image/logo.png" width="100%">
+            </a>
+
+            <a class="location" href="#">
+                <img src="/assets/masar_portal_oldtimer/oldtimer/image/Icon.png" >
+            </a>
+
+            <p class="location-desc" href="#">
+                Deliver to <br> United Arab Emirates
+            </p>
+
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul id="l-nav" class="navbar-nav">
+                    <li class="menu-item dropdown move">
+                        <a class="menu-link dropdown-toggle dropdown-toggle" href="#" id="dropdown1" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                           All
+
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown1">
+                            <a class="dropdown-item" href="#">item1</a>
+                            <a class="dropdown-item" href="#">item2</a>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="search-box">
+                <input type="text" class="icon-rtl" value placeholder="Search product">
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul id="l-nav" class="navbar-nav">
+
+                    <li class="menu-item dropdown flag">
+                        <a class="menu-link dropdown-toggle2 zr" href="#" id="dropdown1" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                           <img src="/assets/masar_portal_oldtimer/oldtimer/image/em-flag.png" width="50px">
+                           <i class="fa fa-angle-down"></i>
+
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown1">
+                            <a class="dropdown-item" href="#"><img src="/assets/masar_portal_oldtimer/oldtimer/image/usa-flag.png" width="50px"></a>
+                        </div>
+                    </li>
+
+                    <li class="menu-item dropdown">
+                        <a class="menu-link dropdown-toggle2 zr2" href="#" id="dropdown2" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">Account
+                           <i class="fa fa-angle-down"></i>
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdown2">
+                            <a class="dropdown-item" href="#">item1</a>
+                            <a class="dropdown-item" href="#">item2</a>
+
+                        </div>
+                    </li>
+
+                    <li class="location2" href="#">
+                        Returns<br> & Orders
+
+                    </li>
+
+                    <li class="location store" href="#">
+                        <img src="/assets/masar_portal_oldtimer/oldtimer/image/down.stpng.png" >
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand" id="mobile-nav">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6 col-6 part2">
+                    <div class="burger">
+                        <div style=" top:30px ; left: 20px; position:absolute;font-size:30px; padding:2px 10px;     cursor: pointer;" onclick="openNav()" class="bb">
+                            <img src="/assets/masar_portal_oldtimer/oldtimer/image/mobile-bb.png">
+                        </div>
+                    </div>
+                    <a class="store-mobile" href="#">
+                        <img id="logo" src="/assets/masar_portal_oldtimer/oldtimer/image/store-mobile.png" width="100%">
+                    </a>
+
+
+
+                </div>
+                <div class="col-sm-6 col-6">
+                    <a class="navbar-brand" href="#">
+                        <img id="logo" src="/assets/masar_portal_oldtimer/oldtimer/image//bdd.png" width="100%">
+                    </a>
+                </div>
+            </div>
+            <div class="row" style="width: 100%;">
+                <div class="col-sm-12 col-6 part3">
+                    <div class="collapse navbar-collapse" id="navbarExample">
+                        <ul id="l-nav" class="navbar-nav">
+                            <li class="menu-item dropdown move">
+                                <a class="menu-link dropdown-toggle dropdown-toggle" href="#" id="dropdown1" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                   All
+
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdown1">
+                                    <a class="dropdown-item" href="#">item1</a>
+                                    <a class="dropdown-item" href="#">item2</a>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" class="icon-rtl" value placeholder="Search product">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <header class="navbar navbar-expand-md" >
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggle-span"><i class="fa fa-bars"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse collapse2 show co-mobile" id="navbarsExample05">
+                <ul id="nav" class="navbar-nav pl-lg-3 pl-0 myDIV">
+
+                    <li class="nav-item item1">
+                        <a class="nav-link btn-1" href="#">Home</a>
+                    </li>
+
+                    <li class="menu-item dropdown item1">
+                        <a class="menu-link nav-link dropdown-toggle btn-1" href="#" id="dropdown7" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">Science of Lighting
+                          <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown7">
+                            <a class="dropdown-item" href="#">Lighting Zones Explained</a>
+                            <a class="dropdown-item" href="#">uService</a>
+
+                            <a class="dropdown-item" href="#">5000K Daylight</a>
+                            <a class="dropdown-item" href="#">Moistureblock</a>
+                            <a class="dropdown-item" href="#">Clearview</a>
+                            <a class="dropdown-item" href="#">Copperdrive</a>
+                            <a class="dropdown-item" href="#">BMT-Battery Management</a>
+
+
+
+                        </div>
+                    </li>
+
+                    <li class="menu-item nav-link dropdown item2">
+                        <a class="menu-link dropdown-toggle btn-1" href="#" id="dropdown8" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">Dealers
+                           <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown8">
+                            <a class="dropdown-item" href="#">Dealer Login</a>
+                            <a class="dropdown-item" href="#">Become a Dealer</a>
+
+                        </div>
+                    </li>
+
+                    <li class="menu-item nav-link dropdown item2">
+                        <a class="menu-link dropdown-toggle btn-1" href="#" id="dropdown9" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">Help
+                           <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown9">
+                            <a class="dropdown-item" href="#">item1</a>
+                            <a class="dropdown-item" href="#">item2</a>
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item nav-link item2">
+                        <a class="nav-link btn-1" href="#">Shop By Product</a>
+                    </li>
+
+
+                </ul>
+
+
+
+            </div>
+
+            <div id="mymenu">
+                <div id="mySidenav" class="sidenav">
+
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times"></i></a>
+                    <ul class="link list-unstyled" style="margin-top: 4rem">
+
+
+                        <hr><li class="l1" style="margin-top: 1.5rem"><a href="">Home</a></li><hr>
+                        <li style="margin-top: 1.5rem" class="menu-item dropdown item1">
+                            <a class="menu-link nav-link dropdown-toggle" href="#"  id="dropdown7" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">Science of Lighting
+                              <i class="fa fa-angle-down"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown7">
+                                <a class="dropdown-item" href="#">Lighting Zones Explained</a>
+                                <a class="dropdown-item" href="#">uService</a>
+
+                                <a class="dropdown-item" href="#">5000K Daylight</a>
+                                <a class="dropdown-item" href="#">Moistureblock</a>
+                                <a class="dropdown-item" href="#">Clearview</a>
+                                <a class="dropdown-item" href="#">Copperdrive</a>
+                                <a class="dropdown-item" href="#">BMT-Battery Management</a>
+
+
+
+                            </div>
+                            <!-- <div class="dropdown-menu" aria-labelledby="dropdown7">
+                                <a class="dropdown-item" href="#">item1</a>
+                                <a class="dropdown-item" href="#">item2</a>
+
+                            </div> -->
+
+                        </li><hr>
+                        <li  style="margin-top: 1.5rem" class="menu-item nav-link dropdown item2">
+                            <a class="menu-link dropdown-toggle" href="#" id="dropdown8" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">Dealers
+                               <i class="fa fa-angle-down"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown8">
+                                <a class="dropdown-item" href="#">Dealer Login</a>
+                                <a class="dropdown-item" href="#">Become a Dealer</a>
+
+                            </div>
+                        </li><hr>
+
+                        <li  style="margin-top: 1.5rem" class="menu-item nav-link dropdown item2">
+                            <a class="menu-link dropdown-toggle" href="#" id="dropdown9" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">Help
+                               <i class="fa fa-angle-down"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown9">
+                                <a class="dropdown-item" href="#">item1</a>
+                                <a class="dropdown-item" href="#">item2</a>
+
+                            </div>
+                        </li><hr>
+
+                        <li style="margin-top: 1.5rem"><a href="">Shop By Product</a></li><hr>
+
+
+
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+
+
+{% block content %}
+{% endblock %}
+<footer id="desctop-footer">
+    <div class="container-fluid">
+
+        <div class="row box">
+
+
+
+
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12  down part1">
+                <p class="title">Contact Us</p>
+                <div class="group">
+                    <img src="/assets/masar_portal_oldtimer/oldtimer/image/Icon material-email.png">
+                    <a href="#">info@oldtimer-me.com </a>
+                </div>
+                <div class="group mygroup">
+                    <img src="/assets/masar_portal_oldtimer/oldtimer/image/loaction-icon.png">
+                    <a href="#">Unit 7, Business Park 1,<br>Dubai Autodrome - Motor City - Dubai</a>
+                    <!-- <a href="#" class="tow"> </a> -->
+                </div>
+                <div class="group">
+                    <img src="/assets/masar_portal_oldtimer/oldtimer/image/Icon feather-phone-call.png">
+                    <a href="#">+971 56 480 4689</a>
+                </div>
+                <div class="group">
+                    <img src="/assets/masar_portal_oldtimer/oldtimer/image/Icon awesome-whatsapp.png">
+                    <a href="#">+971 56 480 4689</a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12  down down1" id="about-mobile">
+                <p class="title">About Us</p>
+                <p class="desc">A one stop shop for high end Motorcycle
+                    Helmets, Jacket, Pants, Boots, Gloves, Gear,
+                    Parts & Accessories for Adventure, sport, cafe or
+                    cruiser bike style.</p>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-sm-6 col-12  down down2 down3">
+
+                <p class="title" id="follow-us">Follow Us</p>
+                <div class="follow-icon">
+                    <img src="/assets/masar_portal_oldtimer/oldtimer/image/footer-facebook.png">
+                    <img src="/assets/masar_portal_oldtimer/oldtimer/image/footer-instagram.png">
+                    <img src="/assets/masar_portal_oldtimer/oldtimer/image/footer-tik-tok.png">
+                    <img src="/assets/masar_portal_oldtimer/oldtimer/image/new-youtub.png">
+                </div>
+                <p class="title">Useful Links</p>
+
+                <a href="#"> Home </a>
+                <a href="#"> Dealer Login </a>
+                <a href="#" > Become a Dealer</a>
+                <a href="#" class="tobr"> Shop by Product </a>
+
+
+
+
+
+
+
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 down down4">
+                <div class="fini">
+                    <img src="/assets/masar_portal_oldtimer/oldtimer/image/logo new.png" class="img1">
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+<footer id="mobile-footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-12 col-12 down down0">
+
+                    <img src="/assets/masar_portal_oldtimer/oldtimer/image/logo new.png" class="img1">
+
+            </div>
+
+            <div class="col-sm-12 col-12 down down1">
+                <p class="title">About Us</p>
+                <p class="desc">A one stop shop for high end Motorcycle
+                    Helmets, Jacket, Pants, Boots, Gloves, Gear,
+                    Parts & Accessories for Adventure, sport, cafe or
+                    cruiser bike style.
+                </p>
+            </div>
+
+            <div class="col-sm-12 col-12 down">
+                <p class="title">Contact Us</p>
+                <div class="group">
+                    <a href="#">info@oldtimer-me.com </a>
+                </div>
+                <div class="group mygroup">
+                    <a href="#">Unit 7, Business Park 1,<br>Dubai Autodrome - Motor City - Dubai</a>
+                </div>
+                <div class="group">
+                    <a href="#">+971 56 480 4689</a>
+                </div>
+                <div class="group">
+                    <a href="#">+971 56 480 4689</a>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-12 down Links">
+
+                <p class="title">Useful Links</p>
+
+                <div class="row part1">
+                    <a href="#"> Home </a>
+                    <a href="#"> Dealer Login </a>
+                    <a href="#" > Become a Dealer</a>
+                </div>
+                <div class="row part2">
+                    <a href="#" class="tobr"> Shop by Product </a>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-12 down">
+                <p class="title" id="follow-us">Follow Us</p>
+                <div class="follow-icon">
+                    <img src="/assets/masar_portal_oldtimer/oldtimer/image/footer-facebook.png">
+                    <img src="/assets/masar_portal_oldtimer/oldtimer/image/footer-instagram.png">
+                    <img src="/assets/masar_portal_oldtimer/oldtimer/image/footer-tik-tok.png">
+                    <img src="/assets/masar_portal_oldtimer/oldtimer/image/new-youtub.png">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="/assets/masar_portal_oldtimer/oldtimer/js/jquery.morecontent.js"></script>
+        <script src="/assets/masar_portal_oldtimer/oldtimer/js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+<script>
+    // var header = document.getElementById("left-nav");
+    var btns = document.getElementsByClassName("nav-link");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            if (current.length > 0) {
+                current[0].className = current[0].className.replace(" active", "");
+            }
+            this.className += " active";
+        });
+    }
+</script>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "280px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+<script>
+
+    $('#myCarousel-slid').owlCarousel({
+        interval: 0,
+        loop: true,
+        margin: 10,
+        nav: true,
+        navText: ['<a ><i class="fa fa-angle-left"></i> </a>', '<a ><i class="fa fa-angle-right"></i></a>'],
+
+        autoplay: true,
+
+        autoplayTimeout: 7000,
+        rtl: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            800: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+
+        }
+    })
+</script>
+<script>
+
+    $('#myCarousel-blogs').owlCarousel({
+        interval: 0,
+        loop: true,
+        margin: 20,
+        nav: false,
+        // navText: ['<a ><i class="far fa-arrow-left"></i> </a>', '<a ><i class="far fa-arrow-right"></i></a>'],
+
+        autoplay: true,
+
+        autoplayTimeout: 4000,
+        rtl: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            800: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+
+        }
+    })
+</script>
+
+<script>
+
+    $('#myCarousel-SERVICES').owlCarousel({
+        interval: 0,
+        loop: true,
+        margin: 20,
+        // nav: true,
+        // navText: ['<a ><i class="far fa-arrow-left"></i> </a>', '<a ><i class="far fa-arrow-right"></i></a>'],
+
+        autoplay: false,
+
+        autoplayTimeout: 0,
+        rtl: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            800: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+
+        }
+    })
+</script>
+<script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("myDIV");
+    var btns = header.getElementsByClassName("btn-1");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+    }
+    </script>
+
+
+
+
+
+
+</body>
+</html>
