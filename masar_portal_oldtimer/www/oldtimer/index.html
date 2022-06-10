@@ -16,33 +16,25 @@
 
     <div class="container">
         <div class="owl-carousel owl-1" id="myCarousel-slid">
+          {% for banners in banners %}
+          <div class="item wow" id="app">
 
-
-
-            <div class="item wow" id="app">
                 <div class="row">
+
                     <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+
                         <div class="group content-txt">
-                            <h2 class="title wow fadeInRight">Q U A L I T Y</h2>
-                            <p class="desc wow fadeInRight">Over 25 years ago, Baja<br>
-                                Designs was founded with<br>
-                                a passion and thirst for off<br>
-                                road. Performance driven<br>
-                                and race proven - Baja<br>
-                                Designs engineers and<br>
-                                manufactures American</p>
-                        </div>
+                            <h2 class="title wow fadeInRight">{{banners.banner_name}}</h2>
+                            <p class="desc wow fadeInRight">{{banners.description}}</div>
                     </div>
                     <div class="col-lg-8 col-md-8 col-sm-12 col-12">
-                        <a href="#" class="active d-none d-md-block"> <img src="/assets/masar_portal_oldtimer/oldtimer/image/img1.png" alt="" class="wow ZoomIn"></a>
+                        <a href="#" class="active d-none d-md-block"> <img src="{{banners.image}}" alt="" class="wow ZoomIn"></a>
                          <div class="shop d-block d-md-none" data-wow-delay=".5s">
                             <a href="#" class="more">Shop Now</a>
                         </div>
                     </div>
-
-
-
                 </div>
+
                 <!-- <div class="switch">
                     <ul>
                       <li>
@@ -54,48 +46,7 @@
                     </ul>
                 </div> -->
             </div>
-
-            <div class="item wow" id="app">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4">
-                        <div class="group">
-                            <h2 class="title wow fadeInRight">Q U A L I T Y</h2>
-                            <p class="desc wow fadeInRight">Over 25 years ago, Baja<br>
-                                Designs was founded with<br>
-                                a passion and thirst for off<br>
-                                road. Performance driven<br>
-                                and race proven - Baja<br>
-                                Designs engineers and<br>
-                                manufactures American</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-8">
-                        <a href="#" class="d-none d-md-block"> <img src="/assets/masar_portal_oldtimer/oldtimer/image/img1.png" alt="" class="wow ZoomIn "></a>
-                        <div class="shop d-block d-md-none" data-wow-delay=".5s">
-                            <a href="#" class="more">Shop Now</a>
-                        </div>
-                    </div>
-
-
-
-                </div>
-                <!-- <div class="switch">
-                    <ul>
-                      <li>
-                        <div class="on"></div>
-                      </li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
-                </div> -->
-            </div>
-
-
-
-
-
-
+            {% endfor %}
 
         </div>
     </div>
