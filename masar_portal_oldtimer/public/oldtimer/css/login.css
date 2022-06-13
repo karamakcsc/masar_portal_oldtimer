@@ -1,0 +1,319 @@
+html {
+    scroll-behavior: smooth
+}
+
+* {
+    outline: 0 !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+@font-face {
+    font-family: 'United\ Italic\ Reg\ Black';
+    src: url('../fonts/United\ Italic\ Reg\ Black.otf')
+}
+@font-face {
+    font-family: 'UnitedItalicReg-Medium';
+    src: url('../fonts/UnitedItalicReg-Medium.otf')
+}
+.section2{
+    position: relative;
+    top: -66rem;
+    margin-bottom: -48rem;
+    font-family: 'United\ Italic\ Reg\ Black';
+}
+.section2 .part1{
+    color: white;
+}
+.section2 .part1 h1{
+    font-size:46px;
+}
+.section2 .part1 p{
+    font-size: 24px;
+    padding-right: 105px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.section2 .part1 .more a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    border: 2px solid white;
+    padding: 12px 50px;
+    border-radius: 35px;
+    background-color: black;
+}
+.section2 .part2 .content .title{
+color: #000;
+font-size: 30px;
+text-align: center;
+margin-bottom: 2rem;
+}
+.section2 .part2 .content .modern .item{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+.section2 .part2 .content .modern .item a button{
+    color: #000;
+    /* font-size: 22px; */
+    margin-bottom: 2rem;
+    border: unset;
+    background-color: unset;
+}
+
+
+.section2 .part2 .content .modern .item .active a button{
+font-size: 28px;
+font-family: 'United\ Italic\ Reg\ Black';
+}
+
+.section2 .part2 .content .modern .item .item2 a button{
+    font-size: 28px;
+    font-family: 'UnitedItalicReg-Medium';
+} 
+
+
+.section2 .part2 .content .modern .item .btn-login{
+    border-bottom: 3px solid black;
+    border-width: 10;
+}
+.section2 .part2 .tab-content .grid-circle{
+    display: block;
+}
+.section2 .part2 .tab-content .grid-circle input{
+    box-shadow: 0px 2px 5px 1px #0000002e;
+    display: block;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin: auto;
+    width: 335px;
+}
+
+.section2 .part2 .tab-content .grid-circle input::placeholder{
+    font-size: 14px;
+    font-family: 'UnitedItalicReg-Medium';
+}
+.section2 .part2 .tab-content .grid-circle #email{
+background-image: url('../image/Icon\ email.png');
+background-repeat: no-repeat;
+background-position: 10px;
+    background-size: 20px;
+padding-left: 40px;
+margin-bottom: 2rem;
+}
+.section2 .part2 .tab-content .grid-circle #pwd{
+    background-image: url('../image/Icon\ lock.png');
+background-repeat: no-repeat;
+background-position: 10px;
+    background-size: 20px;
+padding-left: 40px;
+margin-bottom: 2rem;
+}
+.section2 .part2 .tab-content .grid-circle .line{
+    font-family: 'UnitedItalicReg-Medium';
+    font-size: 20px;
+    padding-left: 10.5rem;
+    margin-bottom: 2rem;
+}
+.section2 .part2 .tab-content .grid-circle .line2{
+    font-family: 'UnitedItalicReg-Medium';
+    font-size: 20px;
+    text-align: center;
+}
+.section2 .part2 .tab-content .grid-circle button{
+    color: white;
+    background-color: #C8142F;
+    border: 1px solid #C8142F;
+    font-size: 26px;
+    padding: 5px 139px;
+    border-radius: 33px;
+    margin-left: 10rem;
+    margin-bottom: 2rem;
+}
+.section2 .part2 .tab-content .grid-circle2 button{
+    padding: 5px 118px;
+}
+.section2 .part2 .tab-content .grid-circle .image{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+}
+.section2 .part2 .tab-content .grid-circle .image img{
+    width: 40px;
+    margin-right: 20px;
+}
+.section2 .part2 .content .tab-content button:hover{
+    border: unset;
+    background-color:#898D90;
+    color: white;
+    border: unset;
+}
+/* responsive */
+
+@media(max-width:1199.5px){
+    .section2 .part1 h1 {
+        font-size: 40px;
+        margin-top: 0;
+    }
+    .section2 .part1 p{
+        padding-right: 20px;
+    }
+    .section2 .part2 .tab-content .grid-circle button{
+        margin-left: 5rem;
+    }
+}
+@media(max-width:991.5px){
+    .section2 .part1 h1 {
+        font-size: 30px;
+    }
+    .section2 .part1 h1 {
+        font-size: 30px;
+    }
+    .section2 .part2 .tab-content .grid-circle button {
+        margin-left: 15px;
+        padding: 5px 114px;
+    }
+    .section2 .part2 .tab-content .grid-circle button {
+        padding: 5px 100px;
+    }
+}
+@media(max-width:767.5px){
+.section2 .part1{
+    display: none;
+}
+.section2 .only-mobile{
+    display: block!important;
+}
+.section2{
+    position: unset;
+    margin-bottom: 0;
+}
+.section2 .part2 .tab-content .grid-circle .line{
+    padding-left: 8.5rem;
+}
+.section2 .part2 .tab-content .grid-circle button {
+    padding: 6px 56px;
+    margin-left: 165px;
+    font-size: 20px;
+    margin-bottom: 4rem;
+}
+
+.section2 .part2 .tab-content .grid-circle .image{
+    margin-bottom: 10rem;
+}
+.section2 .part2 .tab-content .grid-circle .image img {
+    width: 35px;
+}
+.section7{
+    margin-bottom: -5rem;
+}
+.section2 .part2 .tab-content .grid-circle2 button{
+    padding: 6px 40px;
+    margin-left: 170px;
+}
+.section2 .part2 .tab-content .tab-pane .only-desctop{
+display: none;
+}
+}
+
+@media(max-width:575.5px){
+    .section2 .part2 .tab-content .grid-circle .line {
+        padding-left: 10.5rem;
+   
+    }
+    .section2 .part2 .tab-content .grid-circle button {
+        margin-left: 187px;
+    }
+}
+@media(max-width:525.5px){
+    .section2 .part2 .tab-content .grid-circle .line {
+        padding-left: 8.5rem;
+    }
+    .section2 .part2 .tab-content .grid-circle button {
+        margin-left: 162px;
+    }
+}
+@media(max-width:480.5px){
+    .section2 .part2 .content .title{
+        font-size: 28px;
+    }
+    .section2 .part2 .content .modern .item .active a button, .section2 .part2 .content .modern .item .item2 a button{
+        font-size: 26px;
+    }
+    .section2 .part2 .tab-content .grid-circle .line {
+        padding-left: 6rem;
+    }
+    .section2 .part2 .tab-content .grid-circle button {
+        margin-left: 140px;
+    }
+}
+@media(max-width:450.5px){
+    .section2 .part2 .tab-content .grid-circle .line {
+        padding-left: 5rem;
+    }
+    .section2 .part2 .tab-content .grid-circle button {
+        margin-left: 124px;
+    }
+}
+@media(max-width:425.5px){
+    .section2 .part2 .tab-content .grid-circle .line {
+        padding-left: 3rem;
+    }
+    .section2 .part2 .tab-content .grid-circle button {
+        margin-left: 110px;
+    }
+}
+@media(max-width:414.5px){
+    .section2 .part2 .tab-content .grid-circle #email, .section2 .part2 .tab-content .grid-circle #pwd{
+        background-position: 20px;
+        padding-left: 60px;
+    }
+    .section2 .part2 .tab-content .grid-circle .line {
+        padding-left: 2.5rem;
+        font-size: 18px;
+        color: black;
+    }
+    .section2 .part2 .tab-content .grid-circle button{
+        padding: 9px 50px;
+    }
+    .section2 .part2 .tab-content .grid-circle .line2{
+        font-size: 18px;
+          color: black;
+    }
+    .section2 .part2 .tab-content .grid-circle .image {
+        margin-bottom: 8rem;
+    }
+}
+@media(max-width:390.5px){
+    .section2 .part2 .tab-content .grid-circle button {
+        margin-left: 95px;
+    }
+}
+@media(max-width:375.5px){
+    .section2 .part2 .tab-content .grid-circle button {
+        margin-left: 90px;
+    }
+}
+@media(max-width:360.5px){
+    .section2 .part2 .tab-content .grid-circle input{
+        width: auto;
+    }
+    .section2 .part2 .content .modern .item .active a button, .section2 .part2 .content .modern .item .item2 a button {
+        font-size: 22px;
+    }
+    .section2 .part2 .tab-content .grid-circle .line {
+        padding-left: 3.5rem;
+    }
+}
+@media(max-width:350.5px){
+    .section2 .part2 .tab-content .grid-circle button {
+        margin-left: 80px;
+    }
+}
+@media(max-width:340.5px){
+    .section2 .part2 .tab-content .grid-circle button{
+        margin-bottom: 2rem
+    }
+}

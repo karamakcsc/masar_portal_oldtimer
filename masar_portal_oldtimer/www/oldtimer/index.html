@@ -8,21 +8,19 @@
 
 </div>
 
-<div class="section-slid wow" id="slid">
+<div class="section-slid" id="slid">
 
     <div class="shop d-none d-md-block" data-wow-delay=".5s">
         <a href="#" class="more">Shop Now</a>
     </div>
 
     <div class="container">
-        <div class="owl-carousel owl-1" id="myCarousel-slid">
+        <div class="owl-carousel owl-1" id="myCarousel-slid" data-ride="carousel" data-interval="0">
           {% for banners in banners %}
-          <div class="item wow" id="app">
 
+            <div class="item wow">
                 <div class="row">
-
                     <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-
                         <div class="group content-txt">
                             <h2 class="title wow fadeInRight">{{banners.banner_name}}</h2>
                             <p class="desc wow fadeInRight">{{banners.description}}</div>
@@ -35,20 +33,18 @@
                     </div>
                 </div>
 
-                <!-- <div class="switch">
-                    <ul>
-                      <li>
-                        <div class="on"></div>
-                      </li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
-                </div> -->
             </div>
             {% endfor %}
 
+
+
+
+
+
         </div>
+
+
+
     </div>
 </div>
 
@@ -78,30 +74,7 @@
 </div>
 
 
-<!-- <div class="section3">
-    <div class="box-overlay">  </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <img src="/assets/masar_portal_oldtimer/oldtimer/image/Mask Group 1.png">
-                </div>
 
-
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12 group">
-                    <div class="title">LIGHTING ZONES EXPLAINED</div>
-                    <div class="desc">We believe it’s not just about having the brightest lights,
-                        but using the right lights in the right way.Learn about the
-                        different lighting zones to achieve the absolute best
-                        lighting package
-                        </div>
-                    <div class="more"><a href="#">Read More</a></div>
-                </div>
-
-            </div>
-        </div>
-
-
-</div> -->
 
 <div class="section3">
     <!-- <div class="parallax"></div> -->

@@ -1,0 +1,324 @@
+html {
+    scroll-behavior: smooth
+}
+
+* {
+    outline: 0 !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+@font-face {
+    font-family: 'United\ Italic\ Reg\ Black';
+    src: url('../fonts/United\ Italic\ Reg\ Black.otf')
+}
+@font-face {
+    font-family: 'UnitedItalicReg-Medium';
+    src: url('../fonts/UnitedItalicReg-Medium.otf')
+}
+.section-dealer{
+    position: relative;
+    top: -66rem;
+    margin-bottom: -48rem;
+    font-family: 'United\ Italic\ Reg\ Black';
+}
+.section-dealer .part1{
+    color: white;
+}
+.section-dealer .part1 h1{
+    font-size:46px;
+}
+.section-dealer .part1 p{
+    font-size: 24px;
+    padding-right: 105px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.section-dealer .part1 .more a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    border: 2px solid white;
+    padding: 12px 50px;
+    border-radius: 35px;
+    background-color: black;
+}
+.section-dealer .part2 .content .title{
+color: #000;
+font-size: 30px;
+text-align: center;
+margin-bottom: 2rem;
+}
+/* .section-dealer .part2 .content .modern .item{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+} */
+/* .section-dealer .part2 .content .modern .item a button{
+    color: #000;
+
+    margin-bottom: 2rem;
+    border: unset;
+    background-color: unset;
+} */
+
+/* 
+.section-dealer .part2 .content .modern .item .active a button{
+font-size: 28px;
+font-family: 'United\ Italic\ Reg\ Black';
+} */
+
+/* .section-dealer .part2 .content .modern .item .item2 a button{
+    font-size: 28px;
+    font-family: 'UnitedItalicReg-Medium';
+}  */
+
+
+/* .section-dealer .part2 .content .modern .item .btn-login{
+    border-bottom: 3px solid black;
+    border-width: 10;
+} */
+.section-dealer .part2 .grid-circle{
+    display: block;
+}
+.section-dealer .part2 .grid-circle input{
+    box-shadow: 0px 2px 5px 1px #0000002e;
+    display: block;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin: auto;
+    width: 335px;
+}
+
+.section-dealer .part2 .grid-circle input::placeholder{
+    font-size: 14px;
+    font-family: 'UnitedItalicReg-Medium';
+}
+.section-dealer .part2 .grid-circle #email{
+background-image: url('../image/Icon\ email.png');
+background-repeat: no-repeat;
+background-position: 10px;
+    background-size: 20px;
+padding-left: 40px;
+margin-bottom: 2rem;
+}
+.section-dealer .part2 .grid-circle #pwd{
+    background-image: url('../image/Icon\ lock.png');
+background-repeat: no-repeat;
+background-position: 10px;
+    background-size: 20px;
+padding-left: 40px;
+margin-bottom: 2rem;
+}
+.section-dealer .part2 .grid-circle .line{
+    font-family: 'UnitedItalicReg-Medium';
+    font-size: 20px;
+    padding-left: 10.5rem;
+    margin-bottom: 2rem;
+}
+.section-dealer .part2 .grid-circle .line2{
+    font-family: 'UnitedItalicReg-Medium';
+    font-size: 18px;
+    padding-left: 10.5rem;
+    color: black;
+}
+.section-dealer .part2 .grid-circle .line2 .colored{
+    color: #C8142F;
+    text-decoration: none;
+    font-family: 'United\ Italic\ Reg\ Black';
+    font-size: 20px;
+    padding-left: 10px;
+}
+.section-dealer .part2 .grid-circle button{
+    color: white;
+    background-color: #C8142F;
+    border: 1px solid #C8142F;
+    font-size: 26px;
+    padding: 5px 139px;
+    border-radius: 33px;
+    margin-left: 10rem;
+    margin-bottom: 3rem;
+}
+.section-dealer .part2 .grid-circle2 button{
+    padding: 5px 118px;
+}
+.section-dealer  .part2 .content button:hover{
+    border: unset;
+    background-color:#898D90;
+    color: white;
+    border: unset;
+}
+/* responsive */
+
+@media(max-width:1199.5px){
+    .section-dealer .part1 h1 {
+        font-size: 40px;
+        margin-top: 0;
+    }
+    .section-dealer .part1 p{
+        padding-right: 20px;
+    }
+    .section-dealer .part2 .grid-circle button{
+        margin-left: 5rem;
+    }
+    .section-dealer .part2 .grid-circle .line{
+        padding-left: 6.5rem;
+    }
+    .section-dealer .part2 .grid-circle .line2{
+        padding-left: 5.5rem;
+    }
+}
+@media(max-width:991.5px){
+    .section-dealer .part1 h1 {
+        font-size: 30px;
+    }
+    .section-dealer .part1 h1 {
+        font-size: 30px;
+    }
+    .section-dealer .part2 .grid-circle button {
+        margin-left: 15px;
+        padding: 5px 100px;
+    }
+    .section-dealer .part2 .grid-circle .line, .section-dealer .part2 .grid-circle .line2 {
+        padding-left: 0rem;
+    }
+
+    
+}
+@media(max-width:767.5px){
+.section-dealer .part1{
+    display: none;
+}
+.section-dealer{
+    position: unset;
+    margin-bottom: 0;
+}
+.section-dealer .part2 .grid-circle .line, .section-dealer .part2 .grid-circle .line2  {
+    padding-left: 8.5rem;
+}
+.section-dealer .part2 .grid-circle button {
+    padding: 6px 56px;
+    margin-left: 165px;
+    font-size: 20px;
+    margin-bottom: 4rem;
+}
+.section7{
+    margin-bottom: -5rem;
+}
+}
+
+@media(max-width:575.5px){
+    .section-dealer .part2 .grid-circle .line {
+        padding-left: 10.5rem;
+   
+    }
+   .section-dealer .part2 .grid-circle .line2{
+    padding-left: 10.5rem;
+   }
+    .section-dealer .part2 .grid-circle button {
+        margin-left: 187px;
+    }
+}
+@media(max-width:525.5px){
+    .section-dealer .part2 .grid-circle .line {
+        padding-left: 8.5rem;
+    }
+    .section-dealer .part2 .grid-circle .line2 {
+        padding-left: 8.5rem;
+    }
+    .section-dealer .part2 .grid-circle button {
+        margin-left: 162px;
+    }
+}
+@media(max-width:500.5px){
+    .section-dealer .part2 .grid-circle .line2 ,   .section-dealer .part2 .grid-circle .line{
+        padding-left: 6.5rem;
+    }
+}
+@media(max-width:480.5px){
+    .section-dealer .part2 .content .title{
+        font-size: 28px;
+    }
+
+    .section-dealer .part2 .grid-circle .line {
+        padding-left: 6rem;
+    }
+    .section-dealer .part2 .grid-circle button {
+        margin-left: 140px;
+    }
+}
+@media(max-width:450.5px){
+    .section-dealer .part2 .grid-circle .line,  .section-dealer .part2 .grid-circle .line2 {
+        padding-left: 5rem;
+    }
+    .section-dealer .part2 .grid-circle button {
+        margin-left: 124px;
+    }
+}
+@media(max-width:425.5px){
+    .section-dealer .part2 .grid-circle .line,  .section-dealer .part2 .grid-circle .line2 {
+        padding-left: 3rem;
+    }
+    .section-dealer .part2 .grid-circle button {
+        margin-left: 110px;
+    }
+}
+@media(max-width:414.5px){
+    .section-dealer .part2 .grid-circle #email, .section-dealer .part2 .grid-circle #pwd{
+        background-position: 20px;
+        padding-left: 60px;
+    }
+    .section-dealer .part2 .grid-circle .line,  .section-dealer .part2 .grid-circle .line2 {
+        padding-left: 2.5rem;
+        font-size: 18px;
+  
+    }
+    .section-dealer .part2 .grid-circle button{
+        padding: 9px 50px;
+    }
+}
+@media(max-width:390.5px){
+    .section-dealer .part2 .grid-circle button {
+        margin-left: 95px;
+    }
+    .section-dealer .part2 .grid-circle .line, .section-dealer .part2 .grid-circle .line2 {
+        font-size: 16px;
+        padding-left: 1.5rem;
+    }
+    .section-dealer .part2 .grid-circle .line2 .colored{
+        font-size: 18px;
+    }
+}
+@media(max-width:375.5px){
+    .section-dealer .part2 .grid-circle button {
+        margin-left: 90px;
+    }
+}
+@media(max-width:360.5px){
+    .sectsection-dealerion2 .part2 .grid-circle input{
+        width: auto;
+    }
+    /* .section-dealer .part2 .content .modern .item .active a button, .section-dealer .part2 .content .modern .item .item2 a button {
+        font-size: 22px;
+    } */
+    .section-dealer .part2 .grid-circle .line {
+        padding-left: 3.5rem;
+    }
+}
+@media(max-width:350.5px){
+    .section-dealer .part2 .grid-circle button {
+        margin-left: 80px;
+    }
+    .section-dealer .part2 .grid-circle #email, .section-dealer .part2 .grid-circle #pwd{
+        width: 100%;
+    }
+    .section-dealer .part2 .grid-circle .line, .section-dealer .part2 .grid-circle .line2{
+        padding-left: 0rem;
+    }
+}
+@media(max-width:340.5px){
+    .section-dealer .part2 .grid-circle button{
+        margin-bottom: 2rem
+    }
+}
