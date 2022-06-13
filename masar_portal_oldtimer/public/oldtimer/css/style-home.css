@@ -579,6 +579,7 @@ margin-bottom: 0;
     display: block;
 } */
 .section-slid #myCarousel-slid .owl-nav{
+    display: none;
     position: relative;
     bottom: -3rem;
 }
@@ -774,6 +775,9 @@ margin-bottom: 0;
 
 
 @media(max-width:767.5px){
+    .section3 .desc, .section4 .desc, .section2 .desc{
+        width: unset;
+    }
     .section3 .group, .section33 .group{
         margin-left: 0rem;
     }
@@ -936,7 +940,7 @@ font-size: 40px;
     padding: 0px 7px;
     }
     .section-slid .group .desc{
-        padding-right: 95px;
+        /* padding-right: 95px; */
     }
     .section-slid {
         margin-bottom: -548px;
@@ -991,7 +995,7 @@ font-size: 40px;
         padding-left: 2rem;
     }
  
-  
+
     
     .text {
         font-size: 29px;
@@ -1203,46 +1207,26 @@ font-size: 40px;
     }
 
 
-/* 
-    nav .navbar-collapse .menu-item .dropdown-menu{
-        top:40px;
-        position: absolute;
-    } */
 
-    /* nav .dropdown-menu a:hover {
-        background-color: #ddd;
-        transition: 0.3s;
-    }
+.section-slid #myCarousel-slid .owl-dots {
+    display: flex;
+    justify-content: center;
+    position: relative;
+top: 7rem;
+}
 
-    nav .dropdown:hover .dropdown-menu {display: block;} 
- 
-    nav .dropdown-menu a:hover {background-color: #C8142F;}
-
-
-    nav .navbar-collapse ul li .dropdown-menu a:hover{
-        background-color: #C8142F;
-        color: white;
-    }
-
-
-
-    
-    header .dropdown-menu a:hover {
-        background-color: #ddd;
-        transition: 0.3s;
-    }
-
-    header .dropdown:hover .dropdown-menu {display: block;} 
- 
-    header .dropdown-menu a:hover {background-color: #C8142F;}
-
-
-    header .navbar-collapse ul li .dropdown-menu a:hover{
-        background-color: #C8142F;
-        background-color: #898D90;
-        color: white;
-    }
-
-    footer .loc{
-        margin-top: 20px;
-    } */
+.section-slid #myCarousel-slid .owl-dot{
+    width: 18px;
+height: 18px;
+border: 2px solid black;
+z-index: 1000;
+color: black;
+background-color: black;
+border-radius: 50%;
+margin: 2px;
+}
+.section-slid #myCarousel-slid .owl-dot.active{
+color: white!important;
+border: 2px solid black!important;
+background-color: #c8142f!important;
+}
