@@ -129,59 +129,21 @@
     <div class="container-fluid">
         <h2 class="text-center" >BLOGS</h2>
         <div class="owl-carousel" id="myCarousel-blogs">
+          {% for blog in blog %}
 
             <div class="item">
                 <div class=" img-overlay">
-                    <img src="/assets/masar_portal_oldtimer/oldtimer/image/s6.png" class="img-overlay-image">
+                    <img src="{{blog.meta_image}}" class="img-overlay-image">
                     <div class="overlay">
-                        <div class="text">
-                            MOISTUREBLOCK | WHATMAKES BAJA DESIGNS</div>
+                        <div class="text">{{blog.title}}</div>
                     </div>
                 </div>
 
-                <p class="time">October,6 2020</p>
-                <p class="title-post d-md-none d-block">MOISTUREBLOCK | WHATMAKES BAJA DESIGNS</p>
-                <p class="desc">When you are on the trail, you
-                    need your lights to work no
-                </p>
+                <p class="time">{{blog.published_on}}</p>
+                <!-- <p class="title-post d-md-none d-block">{{blog.blog_intro}}</p> -->
+                <p class="desc">{{blog.blog_intro}}</p>
             </div>
-
-            <div class="item">
-                <div class=" img-overlay">
-                    <img src="/assets/masar_portal_oldtimer/oldtimer/image/old2.png" class="img-overlay-image">
-                    <div class="overlay">
-                        <div class="text">
-                            2021 Baja 1000 Race Report
-                        </div>
-                    </div>
-                </div>
-
-                <p class="time">October,6 2020</p>
-                <p class="title-post d-md-none d-block">2021 Baja 1000 Race Report</p>
-                <p class="desc">Baja Designs racers made a
-                    huge dent in Pro UTV classes.
-                </p>
-            </div>
-
-            <div class="item">
-                <div class=" img-overlay">
-                    <img src="/assets/masar_portal_oldtimer/oldtimer/image/old-1.png"  class="img-overlay-image">
-                    <div class="overlay">
-                        <div class="text">
-                        Motowhips FE501 Husqvarna "Perfect Storm"
-                        </div>
-                    </div>
-                </div>
-                <p class="time">October,6 2020</p>
-                <p class="title-post d-md-none d-block">Motowhips FE501 Husqvarna "Perfect Storm"</p>
-                <p class="desc">Justin Myerson, has been
-                    building exquisite motorbikes
-                </p>
-            </div>
-
-
-
-
+            {% endfor %}
 
         </div>
 
