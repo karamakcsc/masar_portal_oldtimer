@@ -2,12 +2,50 @@
 {% block title %}Shop-{% endblock %}
 
 {% block content %}
+<link rel="stylesheet" href="/assets/masar_portal_oldtimer/oldtimer/css/shop/shop.css">
+<!-- <link rel="stylesheet" type="text/css" href="/assets/masar_portal_oldtimer/oldtimer/css/shop/animate.css" /> -->
+<!-- <link rel="stylesheet" href="/assets/masar_portal_oldtimer/oldtimer/css/shop/demo.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="/assets/masar_portal_oldtimer/oldtimer/css/shop/header-footer-style.css"/> -->
+<!-- <link rel="stylesheet" href="/assets/masar_portal_oldtimer/oldtimer/css/shop/jquery.morecontent.css"> -->
+<!-- <link rel="stylesheet" href="/assets/masar_portal_oldtimer/oldtimer/css/jquery.mobiscroll.javascript.min.css"> -->
 <div class="section1">
     <div class=" part1"></div>
     <div class=" part2"></div>
 
 </div>
+<style>
+  body{
+      font-family: 'united-italic-reg-black', sans-serif;
+  }
+    .section1{
+background-image: url(/assets/masar_portal_oldtimer/oldtimer/image/37262.png);
+background-repeat: repeat;
+background-position: center;
+background-size: cover;
+height:300px;
+}
 
+.section1 {
+position: unset!important;
+display: flex;
+margin-top: -10rem;
+}
+.section1 .part2, .section1 .part1{
+height: 300px!important;
+}
+@media(max-width:767.5px){
+    body{
+        background-color: #F5F2F2;
+    }
+    #mobile-nav{
+        background-color: #F5F2F2;
+    }
+    .section1 {
+        display: none!important;
+    }
+}
+
+</style>
 
 <div class="shop">
     <div class="container">
