@@ -12,9 +12,11 @@ html {
 
 @font-face {
     font-family: 'United\ Italic\ Reg\ Black';
-    src: url('/assets/masar_portal_oldtimer/oldtimer/css/fonts/United%20Italic%20Reg%20Black.otf')
+    src: url('../fonts/United\ Italic\ Reg\ Black.otf')
 }
-
+body{
+    font-family: 'united-italic-reg-black', sans-serif;
+}
 .shop{
     margin-top: -8rem;
     margin-bottom: 5rem;
@@ -96,7 +98,7 @@ html {
     .shop{
         margin-top: 0;
     }
-
+   
 }
 @media(max-width:575.5px){
     .shop .box{
@@ -115,7 +117,7 @@ html {
 }
 @media(max-width:450px){
     .shop {
-
+      
         margin-bottom: 3rem;
     }
 }

@@ -1,0 +1,281 @@
+html {
+    scroll-behavior: smooth
+}
+
+* {
+    outline: 0 !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.section1 {
+    background-image: url(../image/Group\ 37262.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    height: 709px;
+}
+
+.bootstrap-select .btn:focus {
+    outline: none !important;
+    outline-offset: 0px!important;
+    border: none!important;
+    box-shadow: none!important;
+}
+
+@media(max-width:767.5px) {
+    .section1 {
+        display: block!important;
+        position: unset!important;
+    }
+}
+
+.section1 {
+    height: 527px!important;
+    margin-bottom: -117px!important;
+}
+
+.section1 .part1,
+.section1 .part2 {
+    height: 527px!important;
+}
+
+@media(max-width:550px) {
+    #section1 {
+        display: none!important;
+    }
+}
+
+@font-face {
+    font-family: 'United\ Italic\ Reg\ Black';
+    src: url('../fonts/United\ Italic\ Reg\ Black.otf')
+}
+
+@font-face {
+    font-family: 'UnitedSansExt-Black';
+    src: url('../fonts/UnitedSansExt-Black.otf')
+}
+
+@font-face {
+    font-family: 'UnitedSansExt-Bold';
+    src: url('../fonts/UnitedSansExt-Bold.otf')
+}
+
+@font-face {
+    font-family: 'UnitedSansExt-Heavy';
+    src: url('../fonts/UnitedSansExt-Heavy.otf')
+}
+
+@font-face {
+    font-family: 'UnitedItalicReg-Medium';
+    src: url('../fonts/UnitedItalicReg-Medium.otf')
+}
+
+@font-face {
+    font-family: 'UnitedItalicSemiExt-Heavy';
+    src: url('../fonts/UnitedItalicSemiExt-Heavy.otf')
+}
+
+@font-face {
+    font-family: 'UnitedSansExt-Light';
+    src: url('../fonts/UnitedSansExt-Light.otf')
+}
+
+@font-face {
+    font-family: 'UnitedSansExt-Medium';
+    src: url('../fonts/UnitedSansExt-Medium.otf')
+}
+
+@font-face {
+    font-family: 'unitedsansextblack';
+    src: url('../fonts/unitedsansextblack.png')
+}
+
+@font-face {
+    font-family: 'arial\ 1';
+    src: url('../fonts/arial\ 1.ttf')
+}
+
+@font-face {
+    font-family: 'Arial\ 2';
+    src: url('../fonts/Arial\ 2.ttf')
+}
+
+.top-title {
+    font-family: 'United\ Italic\ Reg\ Black';
+    position: absolute;
+    top: 50%;
+    right: 17%;
+    font-size: 66px;
+    letter-spacing: 2px;
+    color: #000;
+}
+
+.container-all {
+    margin-top: 7rem;
+}
+
+.container-all2 {
+    margin-top: 0rem;
+    margin-bottom: 6rem;
+}
+
+.form-title {
+    font-family: 'United\ Italic\ Reg\ Black';
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+#firseName,
+#lastName,
+#txtPhone,
+#email,
+#companyName,
+#streetAddress,
+#Postal,
+#City,
+#State,
+#Country,
+#Website {
+    box-shadow: 0px 2px 3px #e3e1e1, 0px 1px 3px #ebe9e9;
+    border: none;
+    height: 4.5rem;
+    width: 97%;
+    margin-bottom: 2rem;
+    padding: 5px 10px 5px 47px;
+    font-family: 'UnitedItalicReg-Medium';
+    color: #000;
+}
+
+.input-svg {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 12px;
+    left: 30px;
+}
+
+#Path_65 {
+    stroke: #c8142f!important;
+}
+
+
+/* input#firseName::before {
+    content: "";
+    width: 70px;
+    height: 28px;
+    background: url(../image/person.png) no-repeat;
+    top: 11px;
+    right: 71px;
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+} */
+
+#personal-form input::placeholder,
+#address-form input::placeholder {
+    color: #000;
+}
+
+#pphone1 {
+    padding: 5px 10px 5px 55px;
+}
+
+.iti {
+    width: 100%;
+}
+
+.iti__arrow.iti__arrow--up {
+    border-bottom: 6px solid #c8142f!important;
+}
+
+.iti--separate-dial-code .iti__selected-dial-code {
+    font-family: 'United\ Italic\ Reg\ Black'!important;
+    color: #000!important;
+}
+
+.iti__flag-container {
+    padding: 0px!important;
+}
+
+.mobile {
+    display: none;
+}
+
+.update {
+    font-family: 'United\ Italic\ Reg\ Black'!important;
+    padding: 10px 44px;
+    color: white;
+    border: 1px solid #C8142F;
+    background: #c8142f;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 3rem;
+    letter-spacing: 2px;
+}
+
+.update:hover {
+    background-color: #898D90;
+    color: white;
+    border: unset;
+}
+
+form#personal-form {
+    margin-bottom: 4rem;
+}
+
+@media(max-width:1024px) and (min-width:992px) {
+    .top-title {
+        font-size: 52px;
+    }
+}
+
+@media(max-width:991px) and (min-width:770px) {
+    .top-title {
+        font-size: 49px;
+    }
+}
+
+@media(max-width:768px) and (min-width:560px) {
+    .top-title {
+        font-size: 40px;
+    }
+    .iti-mobile .iti--container {
+        width: auto!important;
+    }
+}
+
+@media(max-width:550px) {
+    .container-all {
+        margin-top: 1rem;
+    }
+    .mobile {
+        display: block;
+        text-align: center;
+        position: inherit;
+        top: 0;
+        right: 0;
+        font-size: 28px;
+        margin-bottom: 3rem;
+        letter-spacing: 0.5px;
+    }
+    body {
+        background: #F5F2F2!important;
+    }
+    .form-title {
+        text-align: center;
+        margin-top: 5px;
+    }
+    #personal-form,
+    #address-form {
+        padding: 0 3rem;
+    }
+    .iti {
+        margin-bottom: 2rem!important;
+    }
+    .iti-mobile .iti--container {
+        width: auto!important;
+    }
+}
