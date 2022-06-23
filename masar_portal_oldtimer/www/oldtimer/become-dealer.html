@@ -1,0 +1,388 @@
+{% extends 'templates/oldtimer_base.html' %}
+{% block title %}Become Dealer-{% endblock %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="/assets/masar_portal_oldtimer/oldtimer/css/Become-dealer.css"/>
+
+<style>
+
+.section1{
+background-image: url(/assets/masar_portal_oldtimer/oldtimer/image/Group\ 37262.png);
+background-repeat: repeat;
+background-position: center;
+background-size: cover;
+height:500px;
+}
+.section1 .part2, .section1 .part1{
+    height: 500px !important;;
+}
+.section1 {
+    position: unset!important;
+    display: flex;
+    margin-top: -10rem;
+    /* margin-bottom: -110px; */
+}
+@media(max-width:767.5px){
+    body{
+        background-color: #F5F2F2;
+    }
+    #mobile-nav{
+        background-color: #F5F2F2;
+    }
+}
+</style>
+
+<div class="section1">
+    <div class=" part1"></div>
+    <div class=" part2"></div>
+
+</div>
+
+<div class="section2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 title">Become a Dealer</div>
+            <div class="col-lg-12 description" id="only-on-desctop">In order to evaluate your request we would ask that you complete the form below in its entirety.<br>
+                Only prospects who will be selected for further evaluation will be contacted by a OLDTIMER representative.<br>
+                Please note that this process can take a few days after </div>
+            <div class="col-lg-12 description" id="only-on-mobile"> In order to evaluate your request we would ask that you complete the form below in its entirety.<br>
+                Only prospects who will be selected for further evaluation will be contacted by a OLDTIMER representative. <br>
+                Please note that this process can take a few days after submitting the form.<br>
+                Please note, that this form constitutes an enquiry and it is not a guarantee of acceptance as an authorized
+               </div>
+            <div class="col-lg-12 more"><a href="#"> More Info</a></div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" id="mobile-size">
+    <hr class="mobile-size">
+</div>
+<div class="section-form">
+
+        <form>
+            <div class="container">
+                <p class="title">Contact Person:</p>
+                <div class="group">
+                    <input type="text" id="fname" name="fname" placeholder="First Name*">
+                    <input type="text" id="lname" name="lname" placeholder="Last Name*">
+                </div>
+                <div class="group">
+                    <input type="tel" id="txtPhone" placeholder="Phone Number*" />
+                    <!-- <input type="tel" pattern="[+]{0,1}[0-9]{8,13}" name="phone" id="telephone"
+                    value="+971" onkeypress="return AllowOnlyNumbers(event);" placeholder="Phone Number*" required/>
+                     -->
+                    <input  type="email" id="email" name="email" placeholder="Email Address*">
+                </div>
+            </div>
+
+            <div class="container-fluid hr-line">
+                <hr>
+            </div>
+
+
+            <div class="container">
+                <p class="title">Business Information:</p>
+                <div class="group">
+                    <input type="text" id="Company-Name" name="" placeholder="Company Name*">
+                    <input type="text" id="Street-address" name="" placeholder="Street Address">
+                    <input type="text" id="Zip-Code" name=""  placeholder="Postal / Zip Code">
+                </div>
+                <div class="group">
+                    <input type="text" id="City" name="" placeholder="City*">
+                    <input type="text" id="State" name="" placeholder="State/Porvince*">
+                    <input type="text" id="Country" name="" placeholder="Country*">
+                </div>
+                <div class="group">
+                    <input type="text" id="Website" name="" placeholder="Website*">
+                </div>
+            </div>
+
+            <div class="container-fluid hr-line lessmore">
+                <hr>
+            </div>
+
+
+            <div class="container">
+                <p class="title Accessories">Working With Car Accessories:</p>
+                <div class="sub-box">
+                    <div class="box1">
+                        <p class="subtitle">Do You Currently Sell Any Car Accessories?</p>
+
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="foobar" checked>
+                                Yes
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="foobar">
+                                No
+                            </label>
+
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <p class="subtitle">Do You Currently Sell Any Vehicle Lights?</p>
+                        <div class="control2">
+                            <label class="radio">
+                                <input type="radio" name="foobar2" checked>
+                                Yes
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="foobar2">
+                                No
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+                <label class="Other"> Other (Please Specify)<input type="text" name=""></label>
+
+            </div>
+
+            <div class="container-fluid hr-line">
+                <hr>
+            </div>
+
+
+            <div class="container subinput">
+                <p class="title">Core Business:</p>
+                <p class="subtitle">What Is Your Business Activities?</p>
+                <input type="text" name="" >
+                <p class="subtitle">How Many Lights Do You Estimate To Sell Yearly?</p>
+                <input type="number" name="">
+            </div>
+
+            <div class="container-fluid hr-line less-top">
+                <hr>
+            </div>
+
+
+            <div class="container mySales">
+                <p class="title Sales">Sales Channels:</p>
+                <p class="subtitle">What Is Your Business Activities?</p>
+
+                <div class="only-desctop">
+                    <span class="first-group bigcheck my-one">
+                        <label class="bigcheck" id="label-check">
+                            <input type="checkbox" class="bigcheck" id="bigcheck-mobile" name="cheese" value="yes" checked/>
+                            <span class="bigcheck-target"></span>
+                            <span class="bigcheck-text">Retail Shop</span>
+                        </label>
+                    </span>
+
+                    <span class="first-group bigcheck">
+                        <label class="bigcheck" id="label-check">
+                            <input type="checkbox" class="bigcheck" id="bigcheck-mobile" name="cheese" value="yes"/>
+                            <span class="bigcheck-target"></span>
+                            <span class="bigcheck-text">Website</span>
+                        </label>
+                    </span>
+
+                    <span class="first-group bigcheck my-one">
+                        <label class="bigcheck" id="label-check">
+                            <input type="checkbox" class="bigcheck" id="bigcheck-mobile" name="cheese" value="yes"/>
+                            <span class="bigcheck-target"></span>
+                            <span class="bigcheck-text">Social Media</span>
+                        </label>
+                    </span>
+
+                    <span class="first-group bigcheck">
+                        <label class="bigcheck" id="label-check">
+                            <input type="checkbox" class="bigcheck" id="bigcheck-mobile" name="cheese" value="yes"/>
+                            <span class="bigcheck-target"></span>
+                            <span class="bigcheck-text">Sub-dealers</span>
+                        </label>
+                    </span>
+                </div>
+
+
+                <div class="only-mobily" style="display: none;">
+                    <div class="row">
+                        <div class="col-sm-6 col-6"><span class="first-group bigcheck my-one">
+                            <label class="bigcheck" id="label-check">
+                                <input type="checkbox" class="bigcheck" id="bigcheck-mobile" name="cheese" value="yes" checked/>
+                                <span class="bigcheck-target"></span>
+                                <span class="bigcheck-text">Retail Shop</span>
+                            </label>
+                        </span></div>
+                        <div class="col-sm-6 col-6"> <span class="first-group bigcheck">
+                            <label class="bigcheck" id="label-check">
+                                <input type="checkbox" class="bigcheck" id="bigcheck-mobile" name="cheese" value="yes"/>
+                                <span class="bigcheck-target"></span>
+                                <span class="bigcheck-text">Website</span>
+                            </label>
+                        </span></div>
+                        <div class="col-sm-6 col-6"> <span class="first-group bigcheck my-one">
+                            <label class="bigcheck" id="label-check">
+                                <input type="checkbox" class="bigcheck" id="bigcheck-mobile" name="cheese" value="yes"/>
+                                <span class="bigcheck-target"></span>
+                                <span class="bigcheck-text">Social Media</span>
+                            </label>
+                        </span></div>
+                        <div class="col-sm-6 col-6"><span class="first-group bigcheck">
+                            <label class="bigcheck" id="label-check">
+                                <input type="checkbox" class="bigcheck" id="bigcheck-mobile" name="cheese" value="yes"/>
+                                <span class="bigcheck-target"></span>
+                                <span class="bigcheck-text">Sub-dealers</span>
+                            </label>
+                        </span></div>
+
+                    </div>
+                </div>
+
+                <p class="subtitle">How Long Has Your Business Been Operating?</p>
+                <input type="text" name="" class="full-width">
+            </div>
+
+
+            <div class="container-fluid hr-line">
+                <hr>
+            </div>
+
+
+            <div class="container Document">
+                <p class="title">Registration Document:</p>
+                <div class="new_Btn">Please choose a file to upload</div><br>
+                <div class="Browser-btn">Browser</div>
+                <input id="html_btn" type="file" name="">
+
+            </div>
+
+            <div class="container-fluid hr-line less1">
+                <hr>
+            </div>
+
+
+            <div class="container Additional">
+                <p class="title">Additional Information:</p>
+                <textarea type="text" name="" placeholder="Additional Information"></textarea>
+            </div>
+            <div class="container fini">
+                <button type="button" class="text-center">Submit</button>
+                <p class="subtitle">Please Review The Below Statement Prior To Submitting. If You Have Any Request Regarding The Data You Submitted.</p>
+            </div>
+        </form>
+
+</div>
+{% endblock %}
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="/assets/masar_portal_oldtimer/oldtimer/js/jquery.morecontent.js"></script>
+<script src="/assets/masar_portal_oldtimer/oldtimer/js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+    <script src="/assets/masar_portal_oldtimer/oldtimer/js/intlTelInput-jquery.min.js"></script>
+    <script src="/assets/masar_portal_oldtimer/oldtimer/js/intlTelInput.js"></script>
+    <script>
+        var input = document.querySelector("#telephone");
+        intlTelInput(input,{
+
+            utilsScript: "js/utils.js"
+        });
+    </script>
+<script>
+    var btns = document.getElementsByClassName("nav-link");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            if (current.length > 0) {
+                current[0].className = current[0].className.replace(" active", "");
+            }
+            this.className += " active";
+        });
+    }
+</script>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "280px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn-1");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="/assets/masar_portal_oldtimer/oldtimer/js/flag.js"></script>
+<script>$(function(){
+$('.selectpicker').selectpicker();
+});</script>
+
+
+<script>
+
+function myFunction(e) {
+    document.getElementById("myText").value = e.target.value;
+
+}
+</script>
+<script>
+
+function mFunction(e) {
+    document.getElementById("myText2").value = e.target.value;
+
+}
+</script>
+
+<script>
+$('.new_Btn').click(function() {
+$('#html_btn').click();
+});
+</script>
+<script>
+$('.Browser-btn').click(function() {
+$('#html_btn').click();
+});
+</script>
+
+
+<script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/js/intlTelInput-jquery.min.js "></script>
+<script type="text/javascript ">
+    $(function() {
+        var code = "+971"; // Assigning value from model.
+        $('#txtPhone').val(code);
+        $('#txtPhone').intlTelInput({
+            autoHideDialCode: true,
+            autoPlaceholder: "ON ",
+            dropdownContainer: document.body,
+            formatOnDisplay: true,
+            hiddenInput: "full_number ",
+            initialCountry: "auto ",
+            nationalMode: true,
+            placeholderNumberType: "MOBILE ",
+            preferredCountries: ['US'],
+            separateDialCode: true
+        });
+        $('#btnSubmit').on('click', function() {
+            var code = $("#txtPhone ").intlTelInput("getSelectedCountryData ").dialCode;
+            var phoneNumber = $('#txtPhone').val();
+            var name = $("#txtPhone ").intlTelInput("getSelectedCountryData ").name;
+            alert('Country Code : ' + code + '\nPhone Number : ' + phoneNumber + '\nCountry Name : ' + name);
+        });
+    });
+</script>

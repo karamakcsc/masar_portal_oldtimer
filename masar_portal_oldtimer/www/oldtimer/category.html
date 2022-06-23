@@ -1,4 +1,6 @@
-{% extends 'templates/oldtimer_base.html' %} {% block title %}Category-{% endblock %} {% block content %}
+{% extends 'templates/oldtimer_base.html' %}
+{% block title %}Category-{% endblock %}
+{% block content %}
 <link rel="stylesheet" type="text/css" href="/assets/masar_portal_oldtimer/oldtimer/css/category.css" />
 <link rel="stylesheet" href="/assets/masar_portal_oldtimer/oldtimer/css/jquery.morecontent.css">
 <style>
@@ -9,31 +11,31 @@
         background-size: cover;
         height: 709px;
     }
-    
+
     .bootstrap-select .btn:focus {
         outline: none !important;
         outline-offset: 0px!important;
         border: none!important;
         box-shadow: none!important;
     }
-    
+
     @media(max-width:767.5px) {
         .section1 {
             display: block!important;
             position: unset!important;
         }
     }
-    
+
     .section1 {
         height: 527px!important;
         margin-bottom: -117px!important;
     }
-    
+
     .section1 .part1,
     .section1 .part2 {
         height: 527px!important;
     }
-    
+
     @media(max-width:550px) {
         #section1 {
             display: none!important;
@@ -127,7 +129,7 @@
                         {% for item in item %}
                         <div class="thumb-wrapper">
                             <div class="title">
-                                <p>{{item.item_code}}</p>
+                                <p>{{item.item_name}}</p>
                             </div>
                             <div class="price">
                                 <p>USD {{item.price_list_rate}}</p>
@@ -209,7 +211,7 @@
                 {% for item in item %}
                 <div class="thumb-wrapper">
                     <div class="title">
-                        <p>{{item.item_code}}</p>
+                        <p>{{item.name}}</p>
                     </div>
                     <div class="price">
                         <p>USD {{item.price_list_rate}}</p>
@@ -258,7 +260,6 @@
 
 
 </div>
-
 
 
 
@@ -473,7 +474,7 @@
     $('.bigcheck-input').addClass("active");
     $('.filters-mobile').hide();
     $('.div33').on('click', '.bigcheck-input', function() {
-        //$('.bigcheck').change(function() { 
+        //$('.bigcheck').change(function() {
         var target = $(this).siblings('.filters-mobile');
         if ($(this).hasClass("active")) { //check if checkbox is checked
             $(target).show(); //show if checked

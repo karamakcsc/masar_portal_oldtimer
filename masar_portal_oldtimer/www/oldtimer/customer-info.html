@@ -1,0 +1,221 @@
+{% extends 'templates/oldtimer_base.html' %}
+{% block title %}Customer Info-{% endblock %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="/assets/masar_portal_oldtimer/oldtimer/css/customer-info.css"/>
+
+<div id="section1" class="section1">
+    <div class=" part1"></div>
+    <div class=" part2"></div>
+    <h1 class="top-title">ACCOUNT INFORMATION</h1>
+</div>
+
+
+<!--first section-->
+<div class="container container-all">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="top-title mobile">Account Informaition</h1>
+            <form id="personal-form">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="form-title">Personal Informaition</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <svg class="input-svg" xmlns="http://www.w3.org/2000/svg" id="Icon_material-email" data-name="Icon material-email" width="30.495" height="30.495" viewBox="0 0 30.495 30.495">
+                            <path id="Icon_awesome-user-alt" data-name="Icon awesome-user-alt" d="M15.248,17.154A8.577,8.577,0,1,0,6.671,8.577,8.579,8.579,0,0,0,15.248,17.154Zm7.624,1.906H19.59a10.368,10.368,0,0,1-8.684,0H7.624A7.623,7.623,0,0,0,0,26.683v.953A2.86,2.86,0,0,0,2.859,30.5H27.636A2.86,2.86,0,0,0,30.5,27.636v-.953A7.623,7.623,0,0,0,22.872,19.06Z" fill="#c8142f"/>
+                        </svg>
+                        <input type="text" name="firstName" id="firseName" placeholder="John" required>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <svg class="input-svg" xmlns="http://www.w3.org/2000/svg" id="Icon_material-email" data-name="Icon material-email" width="30.495" height="30.495" viewBox="0 0 30.495 30.495">
+                            <path id="Icon_awesome-user-alt" data-name="Icon awesome-user-alt" d="M15.248,17.154A8.577,8.577,0,1,0,6.671,8.577,8.579,8.579,0,0,0,15.248,17.154Zm7.624,1.906H19.59a10.368,10.368,0,0,1-8.684,0H7.624A7.623,7.623,0,0,0,0,26.683v.953A2.86,2.86,0,0,0,2.859,30.5H27.636A2.86,2.86,0,0,0,30.5,27.636v-.953A7.623,7.623,0,0,0,22.872,19.06Z" fill="#c8142f"/>
+                        </svg>
+                        <input type="text" name="lastName" id="lastName" placeholder="Doe" required>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <!-- <input type="tel" style="width:97%" pattern="[+]{0,1}[0-9]{8,13}" name="Phone" id="pphone1" minlength="8" maxlength="13" value="+971" required/> -->
+                        <input type="tel" id="txtPhone" placeholder="5xx xxx xxx" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <svg class="input-svg" xmlns="http://www.w3.org/2000/svg" width="31.738" height="24.991" viewBox="0 0 31.738 24.991">
+                            <path id="Icon_material-email" data-name="Icon material-email" d="M31.564,6H6.174A3.145,3.145,0,0,0,3.016,9.124L3,27.867a3.158,3.158,0,0,0,3.174,3.124H31.564a3.158,3.158,0,0,0,3.174-3.124V9.124A3.158,3.158,0,0,0,31.564,6Zm0,6.248-12.7,7.81-12.7-7.81V9.124l12.7,7.81,12.7-7.81Z" transform="translate(-3 -6)" fill="#c8142f"/>
+                        </svg>
+                        <input type="email" name="email" id="email" placeholder="John.doe@example.com" required>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="form-title">Address Informaition</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <svg class="input-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+                            <path id="Icon_awesome-street-view" data-name="Icon awesome-street-view" d="M25.868,23.186a4.5,4.5,0,0,1-1.118.96v1.613c4.677.657,7.875,1.972,7.875,3.491,0,2.175-6.548,3.937-14.625,3.937S3.375,31.425,3.375,29.25c0-1.519,3.2-2.834,7.875-3.491V24.146a4.5,4.5,0,0,1-1.118-.96C4.139,24.282,0,26.582,0,29.25,0,32.978,8.059,36,18,36s18-3.022,18-6.75C36,26.582,31.861,24.282,25.868,23.186ZM18,9a4.5,4.5,0,1,0-4.5-4.5A4.5,4.5,0,0,0,18,9ZM13.5,22.5v6.75a2.25,2.25,0,0,0,2.25,2.25h4.5a2.25,2.25,0,0,0,2.25-2.25V22.5a2.25,2.25,0,0,0,2.25-2.25V13.5a3.375,3.375,0,0,0-3.375-3.375h-.83a6.04,6.04,0,0,1-5.091,0h-.83A3.375,3.375,0,0,0,11.25,13.5v6.75A2.25,2.25,0,0,0,13.5,22.5Z" fill="#c8142f"/>
+                        </svg>
+                        <input type="text" name="streetAddress" id="streetAddress" placeholder="Street Address" required>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <svg class="input-svg" xmlns="http://www.w3.org/2000/svg" width="19.508" height="32.514" viewBox="0 0 19.508 32.514">
+                            <path id="Icon_map-postal-code" data-name="Icon map-postal-code" d="M16.954,0A9.711,9.711,0,0,0,7.2,9.667c0,5.339,9.754,22.847,9.754,22.847s9.754-17.508,9.754-22.847A9.711,9.711,0,0,0,16.954,0Zm-.032,12.558a2.984,2.984,0,1,1,3.011-2.983A3,3,0,0,1,16.922,12.558Z" transform="translate(-7.2)" fill="#c8142f"/>
+                        </svg>
+                        <input type="text" name="Postal" id="Postal" placeholder="Postal / Zip Code*" required>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <svg class="input-svg" xmlns="http://www.w3.org/2000/svg" id="company-svgrepo-com" width="29.448" height="29.448" viewBox="0 0 29.448 29.448">
+                                <path id="Path_63" data-name="Path 63" d="M15.378,4H6.008A1.972,1.972,0,0,0,4,6.008V32.779a.72.72,0,0,0,.669.669H7.346a.632.632,0,0,0,.669-.669V28.763a.632.632,0,0,1,.669-.669H12.7a.632.632,0,0,1,.669.669v4.016a.632.632,0,0,0,.669.669h2.008a1.342,1.342,0,0,0,1.339-1.339V6.008A1.972,1.972,0,0,0,15.378,4ZM9.354,25.082a.316.316,0,0,1-.335.335H7.012a.316.316,0,0,1-.335-.335V21.736a.316.316,0,0,1,.335-.335H9.02a.316.316,0,0,1,.335.335Zm0-6.693a.316.316,0,0,1-.335.335H7.012a.316.316,0,0,1-.335-.335V15.043a.316.316,0,0,1,.335-.335H9.02a.316.316,0,0,1,.335.335Zm0-6.693a.316.316,0,0,1-.335.335H7.012a.316.316,0,0,1-.335-.335V8.35a.316.316,0,0,1,.335-.335H9.02a.316.316,0,0,1,.335.335Zm5.354,13.386a.316.316,0,0,1-.335.335H12.366a.316.316,0,0,1-.335-.335V21.736a.316.316,0,0,1,.335-.335h2.008a.316.316,0,0,1,.335.335Zm0-6.693a.316.316,0,0,1-.335.335H12.366a.316.316,0,0,1-.335-.335V15.043a.316.316,0,0,1,.335-.335h2.008a.316.316,0,0,1,.335.335Zm0-6.693a.316.316,0,0,1-.335.335H12.366a.316.316,0,0,1-.335-.335V8.35a.316.316,0,0,1,.335-.335h2.008a.316.316,0,0,1,.335.335Z" transform="translate(-4 -4)" fill="#c8142f"/>
+                                <path id="Path_64" data-name="Path 64" d="M39.378,14h-9.37A1.972,1.972,0,0,0,28,16.008V36.086a.72.72,0,0,0,.669.669h2.677a.632.632,0,0,0,.669-.669V32.071a.632.632,0,0,1,.669-.669H36.7a.632.632,0,0,1,.669.669v4.016a.632.632,0,0,0,.669.669h2.008a1.342,1.342,0,0,0,1.339-1.339V16.008A1.972,1.972,0,0,0,39.378,14ZM33.354,28.389a.316.316,0,0,1-.335.335H31.012a.316.316,0,0,1-.335-.335V25.043a.316.316,0,0,1,.335-.335H33.02a.316.316,0,0,1,.335.335Zm0-6.693a.316.316,0,0,1-.335.335H31.012a.316.316,0,0,1-.335-.335V18.35a.316.316,0,0,1,.335-.335H33.02a.316.316,0,0,1,.335.335Zm5.354,6.693a.316.316,0,0,1-.335.335H36.366a.316.316,0,0,1-.335-.335V25.043a.316.316,0,0,1,.335-.335h2.008a.316.316,0,0,1,.335.335Zm0-6.693a.316.316,0,0,1-.335.335H36.366a.316.316,0,0,1-.335-.335V18.35a.316.316,0,0,1,.335-.335h2.008a.316.316,0,0,1,.335.335Z" transform="translate(-11.937 -7.307)" fill="#c8142f"/>
+                            </svg>
+                        <input type="text" name="State" id="State" placeholder="State / Province*" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <svg class="input-svg" xmlns="http://www.w3.org/2000/svg" id="company-svgrepo-com" width="29.448" height="29.448" viewBox="0 0 29.448 29.448" stroke="#c8142f">
+                            <path id="Path_63" data-name="Path 63" d="M15.378,4H6.008A1.972,1.972,0,0,0,4,6.008V32.779a.72.72,0,0,0,.669.669H7.346a.632.632,0,0,0,.669-.669V28.763a.632.632,0,0,1,.669-.669H12.7a.632.632,0,0,1,.669.669v4.016a.632.632,0,0,0,.669.669h2.008a1.342,1.342,0,0,0,1.339-1.339V6.008A1.972,1.972,0,0,0,15.378,4ZM9.354,25.082a.316.316,0,0,1-.335.335H7.012a.316.316,0,0,1-.335-.335V21.736a.316.316,0,0,1,.335-.335H9.02a.316.316,0,0,1,.335.335Zm0-6.693a.316.316,0,0,1-.335.335H7.012a.316.316,0,0,1-.335-.335V15.043a.316.316,0,0,1,.335-.335H9.02a.316.316,0,0,1,.335.335Zm0-6.693a.316.316,0,0,1-.335.335H7.012a.316.316,0,0,1-.335-.335V8.35a.316.316,0,0,1,.335-.335H9.02a.316.316,0,0,1,.335.335Zm5.354,13.386a.316.316,0,0,1-.335.335H12.366a.316.316,0,0,1-.335-.335V21.736a.316.316,0,0,1,.335-.335h2.008a.316.316,0,0,1,.335.335Zm0-6.693a.316.316,0,0,1-.335.335H12.366a.316.316,0,0,1-.335-.335V15.043a.316.316,0,0,1,.335-.335h2.008a.316.316,0,0,1,.335.335Zm0-6.693a.316.316,0,0,1-.335.335H12.366a.316.316,0,0,1-.335-.335V8.35a.316.316,0,0,1,.335-.335h2.008a.316.316,0,0,1,.335.335Z" transform="translate(-4 -4)" fill="#c8142f"/>
+                            <path id="Path_64" data-name="Path 64" d="M39.378,14h-9.37A1.972,1.972,0,0,0,28,16.008V36.086a.72.72,0,0,0,.669.669h2.677a.632.632,0,0,0,.669-.669V32.071a.632.632,0,0,1,.669-.669H36.7a.632.632,0,0,1,.669.669v4.016a.632.632,0,0,0,.669.669h2.008a1.342,1.342,0,0,0,1.339-1.339V16.008A1.972,1.972,0,0,0,39.378,14ZM33.354,28.389a.316.316,0,0,1-.335.335H31.012a.316.316,0,0,1-.335-.335V25.043a.316.316,0,0,1,.335-.335H33.02a.316.316,0,0,1,.335.335Zm0-6.693a.316.316,0,0,1-.335.335H31.012a.316.316,0,0,1-.335-.335V18.35a.316.316,0,0,1,.335-.335H33.02a.316.316,0,0,1,.335.335Zm5.354,6.693a.316.316,0,0,1-.335.335H36.366a.316.316,0,0,1-.335-.335V25.043a.316.316,0,0,1,.335-.335h2.008a.316.316,0,0,1,.335.335Zm0-6.693a.316.316,0,0,1-.335.335H36.366a.316.316,0,0,1-.335-.335V18.35a.316.316,0,0,1,.335-.335h2.008a.316.316,0,0,1,.335.335Z" transform="translate(-11.937 -7.307)" fill="#c8142f"/>
+                        </svg>
+                        <input type="text" name="City" id="City" placeholder="City*" required>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <svg class="input-svg" xmlns="http://www.w3.org/2000/svg" id="company-svgrepo-com" width="29.448" height="29.448" viewBox="0 0 29.448 29.448">
+                                <path id="Path_63" data-name="Path 63" d="M15.378,4H6.008A1.972,1.972,0,0,0,4,6.008V32.779a.72.72,0,0,0,.669.669H7.346a.632.632,0,0,0,.669-.669V28.763a.632.632,0,0,1,.669-.669H12.7a.632.632,0,0,1,.669.669v4.016a.632.632,0,0,0,.669.669h2.008a1.342,1.342,0,0,0,1.339-1.339V6.008A1.972,1.972,0,0,0,15.378,4ZM9.354,25.082a.316.316,0,0,1-.335.335H7.012a.316.316,0,0,1-.335-.335V21.736a.316.316,0,0,1,.335-.335H9.02a.316.316,0,0,1,.335.335Zm0-6.693a.316.316,0,0,1-.335.335H7.012a.316.316,0,0,1-.335-.335V15.043a.316.316,0,0,1,.335-.335H9.02a.316.316,0,0,1,.335.335Zm0-6.693a.316.316,0,0,1-.335.335H7.012a.316.316,0,0,1-.335-.335V8.35a.316.316,0,0,1,.335-.335H9.02a.316.316,0,0,1,.335.335Zm5.354,13.386a.316.316,0,0,1-.335.335H12.366a.316.316,0,0,1-.335-.335V21.736a.316.316,0,0,1,.335-.335h2.008a.316.316,0,0,1,.335.335Zm0-6.693a.316.316,0,0,1-.335.335H12.366a.316.316,0,0,1-.335-.335V15.043a.316.316,0,0,1,.335-.335h2.008a.316.316,0,0,1,.335.335Zm0-6.693a.316.316,0,0,1-.335.335H12.366a.316.316,0,0,1-.335-.335V8.35a.316.316,0,0,1,.335-.335h2.008a.316.316,0,0,1,.335.335Z" transform="translate(-4 -4)" fill="#c8142f"/>
+                                <path id="Path_64" data-name="Path 64" d="M39.378,14h-9.37A1.972,1.972,0,0,0,28,16.008V36.086a.72.72,0,0,0,.669.669h2.677a.632.632,0,0,0,.669-.669V32.071a.632.632,0,0,1,.669-.669H36.7a.632.632,0,0,1,.669.669v4.016a.632.632,0,0,0,.669.669h2.008a1.342,1.342,0,0,0,1.339-1.339V16.008A1.972,1.972,0,0,0,39.378,14ZM33.354,28.389a.316.316,0,0,1-.335.335H31.012a.316.316,0,0,1-.335-.335V25.043a.316.316,0,0,1,.335-.335H33.02a.316.316,0,0,1,.335.335Zm0-6.693a.316.316,0,0,1-.335.335H31.012a.316.316,0,0,1-.335-.335V18.35a.316.316,0,0,1,.335-.335H33.02a.316.316,0,0,1,.335.335Zm5.354,6.693a.316.316,0,0,1-.335.335H36.366a.316.316,0,0,1-.335-.335V25.043a.316.316,0,0,1,.335-.335h2.008a.316.316,0,0,1,.335.335Zm0-6.693a.316.316,0,0,1-.335.335H36.366a.316.316,0,0,1-.335-.335V18.35a.316.316,0,0,1,.335-.335h2.008a.316.316,0,0,1,.335.335Z" transform="translate(-11.937 -7.307)" fill="#c8142f"/>
+                            </svg>
+                        <input type="text" name="Country" id="Country" placeholder="Country*" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <button class="update">Update</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js "></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js " integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+
+<script src="js/jquery.morecontent.js "></script>
+<script src="js/wow.min.js "></script>
+<script>
+    new WOW().init();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="js/flag.js"></script>
+<script src="/assets/masar_portal_oldtimer/oldtimer/js/intlTelInput-jquery.min.js"></script>
+<script src="/assets/masar_portal_oldtimer/oldtimer/js/intlTelInput.js"></script>
+<script src="/assets/masar_portal_oldtimer/oldtimer/js/intlTelInput.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/css/intlTelInput.css" />
+
+
+<script>
+    $(function() {
+        $('.selectpicker').selectpicker();
+    });
+</script>
+<script>
+    function myFunction(e) {
+        document.getElementById("myText").value = e.target.value;
+
+    }
+</script>
+<script>
+    function mFunction(e) {
+        document.getElementById("myText2").value = e.target.value;
+
+    }
+</script>
+
+<script>
+    // var header = document.getElementById("left-nav ");
+    var btns = document.getElementsByClassName("nav-link");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            if (current.length > 0) {
+                current[0].className = current[0].className.replace("active", "");
+            }
+            this.className += "active";
+        });
+    }
+</script>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "280px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+<script>
+    function openNav2() {
+        document.getElementById("mySidenav2").style.width = "80%";
+        document.getElementById("mySidenav2").style.padding = "0 0 3rem 10px";
+    }
+
+    function closeNav2() {
+        document.getElementById("mySidenav2").style.width = "0";
+        document.getElementById("mySidenav2").style.padding = "0";
+    }
+</script>
+
+<script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("myDIV");
+    var btns = header.getElementsByClassName("btn-1");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace("active", "");
+            this.className += "active";
+        });
+    }
+</script>
+
+
+
+
+
+<!--just for this page-->
+<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/js/intlTelInput-jquery.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        var code = "+971"; // Assigning value from model.
+        $('#txtPhone').val(code);
+        $('#txtPhone').intlTelInput({
+            autoHideDialCode: true,
+            autoPlaceholder: "ON",
+            dropdownContainer: document.body,
+            formatOnDisplay: true,
+            hiddenInput: "full_number",
+            initialCountry: "auto",
+            nationalMode: true,
+            placeholderNumberType: "MOBILE",
+            preferredCountries: ['US'],
+            separateDialCode: true
+        });
+        $('#btnSubmit').on('click', function() {
+            var code = $("#txtPhone").intlTelInput("getSelectedCountryData").dialCode;
+            var phoneNumber = $('#txtPhone').val();
+            var name = $("#txtPhone").intlTelInput("getSelectedCountryData").name;
+            alert('Country Code : ' + code + '\nPhone Number : ' + phoneNumber + '\nCountry Name : ' + name);
+        });
+    });
+</script>

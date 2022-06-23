@@ -1,0 +1,184 @@
+{% extends 'templates/oldtimer_base.html' %}
+{% block title %}Dealer-{% endblock %}
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="/assets/masar_portal_oldtimer/oldtimer/css/dealer.css"/>
+
+<style>
+.section1{
+    background-image: url(/assets/masar_portal_oldtimer/oldtimer/image/37262.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    height:709px;
+}
+.bootstrap-select .btn:focus{
+outline: none !important;
+outline-offset:0px!important;
+border: none!important;
+box-shadow: none!important;
+}
+.section7{
+    margin-top: 5rem;
+
+}
+@media(max-width:767.5px){
+    .section1{
+        display: none!important;
+        position: unset!important;
+    }
+    body{
+        background-color: #F5F2F2;
+    }
+    #mobile-nav{
+        background-color: #F5F2F2;
+    }
+}
+@media(max-width:425.5px){
+    #mobile-footer .down0 {
+margin-top: 12rem;
+}
+}
+@media(max-width:414.5px){
+    #mobile-footer .down0 {
+margin-top: 13rem;
+}
+}
+@media(max-width:390.5px){
+    #mobile-footer {
+height: 910px;
+}
+}
+</style>
+
+<div class="section1">
+    <div class=" part1"></div>
+    <div class=" part2"></div>
+
+</div>
+
+
+<div class="section-dealer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 part1">
+                <div class="content">
+                    <h1>Lorem ipsum dolor sit amet, consetetur </h1>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos</p>
+                    <div class="more">
+                        <a href="#">More Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 part2">
+                <div class="content">
+                    <p class="title">Dealer Login</p>
+
+
+                        <div id="myhome1" class="tab-pane">
+
+                            <div class="grid-circle wow fadeInLeft">
+
+                                <input type="email" id="email" name="email" placeholder="example@info.come" required>
+                                <input type="password" id="pwd" name="pwd" placeholder="*************" required>
+                                <p class="line">Forgot Password?</p>
+                                <button type="button">Log in</button>
+                                <p class="line2">Don't Have an Account?<a href="#" class="colored">Become a Dealer</a></p>
+
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="/assets/masar_portal_oldtimer/oldtimer/js/jquery.morecontent.js"></script>
+<script src="/assets/masar_portal_oldtimer/oldtimer/js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script>
+    // var header = document.getElementById("left-nav");
+    var btns = document.getElementsByClassName("nav-link");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            if (current.length > 0) {
+                current[0].className = current[0].className.replace(" active", "");
+            }
+            this.className += " active";
+        });
+    }
+</script>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "280px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn-1");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="/assets/masar_portal_oldtimer/oldtimer/js/flag.js"></script>
+<script>$(function(){
+$('.selectpicker').selectpicker();
+});
+</script>
+
+<script>
+
+function myFunction(e){
+    document.getElementById("myText").value = e.target.value;
+
+}
+</script>
+<script>
+
+function mFunction(e){
+    document.getElementById("myText2").value = e.target.value;
+
+}
+</script>
