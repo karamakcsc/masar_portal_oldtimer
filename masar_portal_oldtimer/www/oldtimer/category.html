@@ -1,7 +1,4 @@
-{% extends 'templates/oldtimer_base.html' %}
-{% block title %}Category-{% endblock %}
-
-{% block content %}
+{% extends 'templates/oldtimer_base.html' %} {% block title %}Category-{% endblock %} {% block content %}
 <link rel="stylesheet" type="text/css" href="/assets/masar_portal_oldtimer/oldtimer/css/category.css" />
 <link rel="stylesheet" href="/assets/masar_portal_oldtimer/oldtimer/css/jquery.morecontent.css">
 <style>
@@ -12,31 +9,31 @@
         background-size: cover;
         height: 709px;
     }
-
+    
     .bootstrap-select .btn:focus {
         outline: none !important;
         outline-offset: 0px!important;
         border: none!important;
         box-shadow: none!important;
     }
-
+    
     @media(max-width:767.5px) {
         .section1 {
             display: block!important;
             position: unset!important;
         }
     }
-
+    
     .section1 {
         height: 527px!important;
         margin-bottom: -117px!important;
     }
-
+    
     .section1 .part1,
     .section1 .part2 {
         height: 527px!important;
     }
-
+    
     @media(max-width:550px) {
         #section1 {
             display: none!important;
@@ -63,13 +60,12 @@
                         <!-- <p class="active-filter-mobile" id="first-active-filter-mobile">LP9 Automotive LED Off-Road Lights<span class="close-filter-mobile" onclick="closefiltermobile()"><i class="fa-solid fa-x"></i></span></p> -->
                     </div>
                     {% for cat_nd in cat_nd %}
-                    <div class="div3">
+                    <div class="div33">
                         <input type="checkbox" class="bigcheck-input" id="bigcheck" value="" /><span type="checkbox" class="filter-title bigcheck-input">{{cat_nd.second_category}}<i class="fa fa-caret-down" aria-hidden="true"></i></span>
                         <div class="filters-mobile" id="filters-mobile">
                             {% for cat_th in cat_th %}
                             <button class="LED-Auxiliary-Lights-mobile " value="LP9 Automotive LED Off-Road Lights" id="first-btn-filter-mobile">{{cat_th.third_category}}</button>
-                            <button class="LED-Auxiliary-Lights-mobile " value="LP9 Automotive LED Off-Road Lights" id="first-btn-filter-mobile">{{cat_th.third_category}}</button>
-                            {% endfor %}
+                            <button class="LED-Auxiliary-Lights-mobile " value="LP9 Automotive LED Off-Road Lights" id="first-btn-filter-mobile">{{cat_th.third_category}}</button> {% endfor %}
 
                         </div>
                     </div>
@@ -113,7 +109,7 @@
                 <div class="div3">
                     <input type="checkbox" class="bigcheck-input" id="bigcheck" value="" /><span class="filter-title">{{cat_nd.second_category}}<i class="fa fa-angle-down"></i></span>
                     <div class="filters" id="filters">
-                      {% for cat_th in cat_th %}
+                        {% for cat_th in cat_th %}
                         <button class="LED-Auxiliary-Lights" value="LP9 Automotive LED Off-Road Lights" id="first-btn-filter">{{cat_th.third_category}}</button>{% endfor %}
                     </div>
                 </div>
@@ -128,7 +124,7 @@
 
                     <!--desktop version of product section-->
                     <div class="grid-div mobile-pad">
-                      {% for item in item %}
+                        {% for item in item %}
                         <div class="thumb-wrapper">
                             <div class="title">
                                 <p>{{item.item_code}}</p>
@@ -210,7 +206,7 @@
     <div class="row mobile-row">
         <div class="col-12">
             <div class="grid-mobile">
-              {% for item in item %}
+                {% for item in item %}
                 <div class="thumb-wrapper">
                     <div class="title">
                         <p>{{item.item_code}}</p>
@@ -438,102 +434,57 @@
 </script>
 
 
-<script>
-    // //initially dropdown is hidden
-    $('#bigcheck').change(function() { //change click to hidden
 
+
+
+<script>
+    $('.filters').hide();
+    $('.div3').on('click', '.bigcheck-input', function() {
+        //$('.bigcheck').change(function() { //change click to hidden
+        var target = $(this).siblings('.filters');
         if ($(this).is(':checked')) { //check if checkbox is checked
-            $('#filters').show(); //show if checked
+            $(target).show(); //show if checked
+            target.style.display = "content";
+            $(this).removeClass("active");
         } else {
-            $('#filters').hide(); //hide if unchecked
+            $(target).hide(); //hide if unchecked
+            $(this).addClass("active");
         }
 
     })
 
-    $('#filters3').hide(); //initially dropdown is hidden
-    $('#bigcheck3').change(function() { //change click to hidden
-
-        if ($(this).is(':checked')) { //check if checkbox is checked
-            $('#filters3').show(); //show if checked
+    $('.filter-title').addClass("active");
+    $('.filters').hide();
+    $('.div3').on('click', '.filter-title', function() {
+        var target = $(this).siblings('.filters');
+        var targetcheck = $(this).siblings('.bigcheck-input');
+        if ($(this).hasClass("active")) {
+            $(target).show();
+            $(this).removeClass("active");
+            $(targetcheck).prop("checked", true);
         } else {
-            $('#filters3').hide(); //hide if unchecked
+            $(target).hide();
+            $(this).addClass("active");
+            $(targetcheck).prop("checked", false);
+        }
+    })
+</script>
+<script>
+    $('.bigcheck-input').addClass("active");
+    $('.filters-mobile').hide();
+    $('.div33').on('click', '.bigcheck-input', function() {
+        //$('.bigcheck').change(function() { 
+        var target = $(this).siblings('.filters-mobile');
+        if ($(this).hasClass("active")) { //check if checkbox is checked
+            $(target).show(); //show if checked
+            $(this).removeClass("active");
+        } else {
+            $(target).hide(); //hide if unchecked
+            $(this).addClass("active");
+
         }
 
     })
-    $('#filters4').hide(); //initially dropdown is hidden
-    $('#bigcheck4').change(function() { //change click to hidden
-
-        if ($(this).is(':checked')) { //check if checkbox is checked
-            $('#filters4').show(); //show if checked
-        } else {
-            $('#filters4').hide(); //hide if unchecked
-        }
-
-    })
-    $('#filters5').hide(); //initially dropdown is hidden
-    $('#bigcheck5').change(function() { //change click to hidden
-
-        if ($(this).is(':checked')) { //check if checkbox is checked
-            $('#filters5').show(); //show if checked
-        } else {
-            $('#filters5').hide(); //hide if unchecked
-        }
-
-    })
-</script>
-
-<script>
-    var g = 2;
-
-    function up() {
-        if (g < 100) {
-            g++;
-            document.getElementById('up').innerHTML = g;
-        }
-    }
-
-    function down() {
-        if (g > 1) {
-            g--;
-            document.getElementById('up').innerHTML = g;
-        }
-    }
-</script>
-<script>
-    var g2 = 2;
-
-    function up2() {
-        if (g2 < 100) {
-            g2++;
-            document.getElementById('up2').innerHTML = g2;
-        }
-    }
-
-    function down2() {
-        if (g2 > 1) {
-            g2--;
-            document.getElementById('up2').innerHTML = g2;
-        }
-    }
-</script>
-<script>
-    var g3 = 2;
-
-    function up3() {
-        if (g3 < 100) {
-            g3++;
-            document.getElementById('up3').innerHTML = g3;
-        }
-    }
-
-    function down3() {
-        if (g3 > 1) {
-            g3--;
-            document.getElementById('up3').innerHTML = g3;
-        }
-    }
-</script>
-<script>
 </script>
 <script>
     var filterdiv = document.getElementById("div2");
@@ -567,60 +518,6 @@
         document.getElementById("first-active-filter").style.display = "none";
         document.getElementById("first-btn-filter").classList.remove("active");
     }
-</script>
-<script>
-    $('#filters-mobile').hide(); //initially dropdown is hidden
-    $('#bigcheck-mobile').change(function() { //change click to hidden
-
-        if ($(this).is(':checked')) { //check if checkbox is checked
-            $('#filters-mobile').show(); //show if checked
-        } else {
-            $('#filters-mobile').hide(); //hide if unchecked
-        }
-
-    })
-
-    $('#filters2-mobile').hide(); //initially dropdown is hidden
-    $('#bigcheck2-mobile').change(function() { //change click to hidden
-
-        if ($(this).is(':checked')) { //check if checkbox is checked
-            $('#filters2-mobile').show(); //show if checked
-        } else {
-            $('#filters2-mobile').hide(); //hide if unchecked
-        }
-
-    })
-
-    $('#filters3-mobile').hide(); //initially dropdown is hidden
-    $('#bigcheck3-mobile').change(function() { //change click to hidden
-
-        if ($(this).is(':checked')) { //check if checkbox is checked
-            $('#filters3-mobile').show(); //show if checked
-        } else {
-            $('#filters3-mobile').hide(); //hide if unchecked
-        }
-
-    })
-    $('#filters4-mobile').hide(); //initially dropdown is hidden
-    $('#bigcheck4-mobile').change(function() { //change click to hidden
-
-        if ($(this).is(':checked')) { //check if checkbox is checked
-            $('#filters4-mobile').show(); //show if checked
-        } else {
-            $('#filters4-mobile').hide(); //hide if unchecked
-        }
-
-    })
-    $('#filters5-mobile').hide(); //initially dropdown is hidden
-    $('#bigcheck5-mobile').change(function() { //change click to hidden
-
-        if ($(this).is(':checked')) { //check if checkbox is checked
-            $('#filters5-mobile').show(); //show if checked
-        } else {
-            $('#filters5-mobile').hide(); //hide if unchecked
-        }
-
-    })
 </script>
 <script>
     var filterdiv = document.getElementById("div22");
@@ -682,150 +579,5 @@
         $(target).val(++currentQuantity);
     });
 </script>
-
-
-<script>
-        $('.filters').hide();
-        $('.div3').on('click', '.bigcheck-input', function() {
-            //$('.bigcheck').change(function() { //change click to hidden
-            var target = $(this).siblings('.filters');
-            if ($(this).is(':checked')) { //check if checkbox is checked
-                $(target).show(); //show if checked
-                target.style.display = "content";
-                $(this).removeClass("active");
-            } else {
-                $(target).hide(); //hide if unchecked
-                $(this).addClass("active");
-            }
-
-        })
-
-        $('.filter-title').addClass("active");
-        $('.filters').hide();
-        $('.div3').on('click', '.filter-title', function() {
-            var target = $(this).siblings('.filters');
-            var targetcheck = $(this).siblings('.bigcheck-input');
-            if ($(this).hasClass("active")) {
-                $(target).show();
-                $(this).removeClass("active");
-                $(targetcheck).prop("checked", true);
-            } else {
-                $(target).hide();
-                $(this).addClass("active");
-                $(targetcheck).prop("checked", false);
-            }
-        })
-
-
-        $('.bigcheck-input').addClass("active");
-        $('.filters-mobile').hide();
-        $('.div3').on('click', '.bigcheck-input', function() {
-                //$('.bigcheck').change(function() { //change click to hidden
-                var target = $(this).siblings('.filters-mobile');
-                if ($(this).hasClass("active")) { //check if checkbox is checked
-                    $(target).show(); //show if checked
-                    $(this).removeClass("active");
-                } else {
-                    $(target).hide(); //hide if unchecked
-                    $(this).addClass("active");
-
-                }
-
-            })
-
-    </script>
-    <script>
-        var filterdiv = document.getElementById("div2");
-        var avtivefilter = document.getElementById("active-filter");
-        $('.filters').on('click', '.LED-Auxiliary-Lights', function() {
-            var button = $(this).val();
-            var btn = $(this);
-            if ($(this).hasClass('active')) {
-                filterdiv.innerHTML = filterdiv.innerHTML;
-            } else {
-                $(this).addClass("active");
-                const divp = document.createElement('p');
-                divp.setAttribute('class', 'active-filter');
-                divp.textContent = button;
-                const box = document.getElementById('div2');
-                box.appendChild(divp);
-                const closespan = document.createElement('span');
-                closespan.setAttribute('class', 'close-filter');
-                closespan.innerHTML = <i class=\"fa-solid fa-x\"></i>;
-                divp.appendChild(closespan);
-                const filterbtn = document.getElementsByClassName('LED-Auxiliary-Lights');
-                closespan.addEventListener('click', event => {
-                    divp.style.display = "none";
-                    btn.removeClass("active");
-                });
-            }
-        });
-    </script>
-    <script>
-        function closefilter() {
-            document.getElementById("first-active-filter").style.display = "none";
-            document.getElementById("first-btn-filter").classList.remove("active");
-        }
-    </script>
-    <script>
-        var filterdiv = document.getElementById("div22");
-        var avtivefilter = document.getElementById("active-filter");
-        $('.filters-mobile').on('click', '.LED-Auxiliary-Lights-mobile', function() {
-            var button = $(this).val();
-            var btn = $(this);
-            if ($(this).hasClass('active')) {
-                filterdiv.innerHTML = filterdiv.innerHTML;
-            } else {
-                $(this).addClass("active");
-                const divp = document.createElement('p');
-                divp.setAttribute('class', 'active-filter-mobile');
-                divp.textContent = button;
-                const box = document.getElementById('div22');
-                box.appendChild(divp);
-                const closespan = document.createElement('span');
-                closespan.setAttribute('class', 'close-filter-mobile');
-                closespan.innerHTML = <i class=\"fa-solid fa-x\"></i>;
-                divp.appendChild(closespan);
-                const filterbtn = document.getElementsByClassName('LED-Auxiliary-Lights-mobile');
-                closespan.addEventListener('click', event => {
-                    divp.style.display = "none";
-                    btn.removeClass("active");
-                });
-
-            }
-        });
-    </script>
-    <script>
-        function closefiltermobile() {
-            document.getElementById("first-active-filter-mobile").style.display = "none";
-            document.getElementById("first-btn-filter-mobile").classList.remove("active");
-        }
-    </script>
-    <script>
-        $('.removeItem').click(function() {
-            // Find the appropriate quantity input
-            var target = $(this).siblings('.purchase_quantity');
-
-            // Get the current quantity
-            var currentQuantity = $(target).val();
-
-            // Not allowed to go below zero
-            if (currentQuantity > 0) {
-                // Update input with decreased quantity
-                $(target).val(--currentQuantity);
-            }
-        });
-
-        $('.addItem').click(function() {
-            // Find the appropriate quantity input
-            var target = $(this).siblings('.purchase_quantity');
-
-            // Get the current quantity
-            var currentQuantity = $(target).val();
-
-            // Update input with increased quantity
-            $(target).val(++currentQuantity);
-        });
-    </script>
 
 {% endblock %}
