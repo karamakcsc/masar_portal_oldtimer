@@ -178,4 +178,3 @@ user_data_fields = [
 # auth_hooks = [
 # 	"masar_portal_oldtimer.auth.validate"
 # ]
-

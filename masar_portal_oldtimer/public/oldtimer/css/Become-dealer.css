@@ -63,7 +63,7 @@ html {
     display: flex;
 }
 .section-form .group #fname{
-    background-image: url('../image/iconperson.png');
+    background-image: url('../image/Iconperson.png');
     background-repeat: no-repeat;
     background-position: 22px;
     padding-left: 55px;
@@ -73,12 +73,12 @@ html {
     margin-bottom: 3rem;
 }
 .section-form .group #lname{
-    background-image: url('../image/iconperson.png');
+    background-image: url('../image/Iconperson.png');
     background-repeat: no-repeat;
     background-position: 22px;
     padding-left: 55px;
         background-size: 20px;
-   
+
     margin-bottom: 3rem;
 }
 .section-form #telephone{
@@ -88,7 +88,7 @@ html {
     height: 62%!important;
 }
 .iti__selected-flag{
-    
+
     background-color: #eee!important;
 }
 .iti__arrow{
@@ -218,7 +218,7 @@ color: #898D90;
     padding: 14px 20px;
     margin-right: 4rem!important;
     box-shadow: 0px 2px 5px 1px #eee;
-} 
+}
 .section-form .Other{
     margin-top: 2rem;
     font-size: 22px;
@@ -235,7 +235,7 @@ margin-left: 3rem;
     margin: 1.5rem 0 3rem 0;
 }
 .section-form .subinput input[type='number']:focus{
-    outline: none!important; 
+    outline: none!important;
     outline: none;
     border: specify yours;
 }
@@ -285,7 +285,7 @@ margin-left: 3rem;
     margin: 4rem 0 8rem 0;
     border: unset;
     box-shadow: rgb(238 238 238) 0px 2px 5px 1px;
- 
+
     min-height: 15rem;
     max-height: 15rem;
 }
@@ -330,7 +330,7 @@ margin-left: 3rem;
     text-align: center;
 }
 .section-form .fini button{
-    
+
     padding: 6px 50px;
     font-family: 'United\ Italic\ Reg\ Black';
     color: white;
@@ -435,8 +435,8 @@ span.bigcheck {
     .section-form .Other input{
         width: 620px;
     }
-       
-   
+
+
     .section-form .subinput input{
         width: 860px;
     }
@@ -447,7 +447,7 @@ span.bigcheck {
         display: flex;
         font-size: 18px;
     }
-    
+
     .section-form input[type="text"], input[type="number"], .section-form .group input{
         margin-right: 10px!important;
         width: 245px;
@@ -688,7 +688,7 @@ span.bigcheck {
     .section2 #only-on-mobile {
         font-size: 15px;
         padding: 0px 20px;
-    
+
     }
     .section-form input[type="text"], input[type="number"], .section-form .group input{
         box-shadow: 0px 2px 5px 1px #cbcbcb;

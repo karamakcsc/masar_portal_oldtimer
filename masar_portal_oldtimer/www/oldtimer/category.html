@@ -63,11 +63,11 @@
                     </div>
                     {% for cat_nd in cat_nd %}
                     <div class="div33">
-                        <input type="checkbox" class="bigcheck-input" id="bigcheck" value="" /><span type="checkbox" class="filter-title bigcheck-input">{{cat_nd.second_category}}<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                        <input type="checkbox" class="bigcheck-input" id="bigcheck" value="{{cat_nd.name}}" /><span type="checkbox" class="filter-title bigcheck-input">{{cat_nd.name}}<i class="fa fa-caret-down" aria-hidden="true"></i></span>
                         <div class="filters-mobile" id="filters-mobile">
                             {% for cat_th in cat_th %}
-                            <button class="LED-Auxiliary-Lights-mobile " value="LP9 Automotive LED Off-Road Lights" id="first-btn-filter-mobile">{{cat_th.third_category}}</button>
-                            <button class="LED-Auxiliary-Lights-mobile " value="LP9 Automotive LED Off-Road Lights" id="first-btn-filter-mobile">{{cat_th.third_category}}</button> {% endfor %}
+                            <button class="LED-Auxiliary-Lights-mobile " value="{{cat_th.name}}" id="first-btn-filter-mobile">{{cat_th.name}}</button>
+                            <button class="LED-Auxiliary-Lights-mobile " value="{{cat_th.name}}">{{cat_th.name}}</button> {% endfor %}
 
                         </div>
                     </div>
@@ -109,10 +109,10 @@
 
                 {% for cat_nd in cat_nd %}
                 <div class="div3">
-                    <input type="checkbox" class="bigcheck-input" id="bigcheck" value="" /><span class="filter-title">{{cat_nd.second_category}}<i class="fa fa-angle-down"></i></span>
+                    <input type="checkbox" class="bigcheck-input" id="bigcheck" value="{{cat_nd.name}}" /><span class="filter-title">{{cat_nd.name}}<i class="fa fa-angle-down"></i></span>
                     <div class="filters" id="filters">
                         {% for cat_th in cat_th %}
-                        <button class="LED-Auxiliary-Lights" value="LP9 Automotive LED Off-Road Lights" id="first-btn-filter">{{cat_th.third_category}}</button>{% endfor %}
+                        <button class="LED-Auxiliary-Lights" value="{{cat_th.name}}" id="first-btn-filter">{{cat_th.name}}</button>{% endfor %}
                     </div>
                 </div>
                 {% endfor %}
@@ -261,7 +261,18 @@
 
 </div>
 
-
+<div class="row">
+          <div class="col-md-12 text-center">
+            <div class="site-pagination">
+              {% if prev %}
+              <a href="/oldtimer/category?page={{prev}}" class="btn btn-warning">Previous</a>
+              {% endif %}
+              {% if next %}
+              <a href="/oldtimer/category?page={{next}}" class="btn btn-active">Next</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
 
 
 
