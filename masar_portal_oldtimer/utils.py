@@ -20,7 +20,7 @@ def paginate(doctype, page=0, paginate_by=12):
 							FROM `tab{doctype}` ti {conditions}
 							inner JOIN `tabItem Price` tip
                         	ON (tip.item_code = ti.item_code AND tip.brand =ti.brand)
-                        	WHERE ti.disabled= 0 AND ti.brand = 'Baja Designs' AND tip.price_list = 'BajaDesigns MSRP -USD'
+                        	WHERE ti.disabled= 0 AND ti.brand = 'Baja Designs' And ti.publish_on_bajadesigns = 1 AND tip.price_list = 'BajaDesigns MSRP -USD'
                         	ORDER BY ti.creation DESC """
 
 

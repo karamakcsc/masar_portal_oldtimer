@@ -13,7 +13,7 @@ def get_context(context):
 
 	#Second Category Loop
 	cat_nd = frappe.db.sql(""" SELECT name, creation, first_category, second_category
-						   FROM `tabItem Second Category`  WHERE first_category ='Cars' ORDER BY creation DESC LIMIT 12;""", as_dict=True)
+						   FROM `tabItem Second Category`  WHERE first_category ='Cars' ORDER BY creation DESC ;""", as_dict=True)
 	context.cat_nd = cat_nd
 
 	#Thired Category Loop

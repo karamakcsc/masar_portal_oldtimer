@@ -1,4 +1,5 @@
 from . import __version__ as app_version
+# from masar_portal_oldtimer.route import routes
 
 app_name = "masar_portal_oldtimer"
 app_title = "Masar Portal Oldtimer"
@@ -46,7 +47,7 @@ app_license = "MIT"
 # role_home_page = {
 #	"Role": "home_page"
 # }
-
+# website_route_rules = routes
 # Generators
 # ----------
 
