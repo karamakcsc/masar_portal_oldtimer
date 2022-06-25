@@ -17,7 +17,7 @@ def paginate(doctype, page=0, paginate_by=12):
     prev, next = 0, 0
     conditions = " "
     query = f"""SELECT ti.name, ti.item_name, ti.item_code, ti.description, ti.image, ti.disabled, tip.price_list, price_list_rate
-							FROM `tab{doctype}` ti {conditions}
+							FROM `tabItem` ti {conditions}
 							inner JOIN `tabItem Price` tip
                         	ON (tip.item_code = ti.item_code AND tip.brand =ti.brand)
                         	WHERE ti.disabled= 0 AND ti.brand = 'Baja Designs' And ti.publish_on_bajadesigns = 1 AND tip.price_list = 'BajaDesigns MSRP -USD'
