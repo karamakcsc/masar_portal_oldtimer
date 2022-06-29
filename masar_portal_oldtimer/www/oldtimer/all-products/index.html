@@ -2,7 +2,8 @@
 
 {% extends 'templates/oldtimer_web.html' %}
 
-{% block title %}{{ _('All Products') }}{% endblock %}
+{% block title %}{{ _('All Products-') }}{% endblock %}
+
 
 
 {% block page_content %}
@@ -35,6 +36,16 @@
 
 	</div>
 </div>
+<script>
+	window.frappe = {};
+	frappe.ready_events = [];
+	frappe.ready = function(fn) {
+		frappe.ready_events.push(fn);
+	}
+	window.dev_server = {{ dev_server }};
+	window.socketio_port = {{ (frappe.socketio_port or 'null') }};
+	window.show_language_picker = {{ show_language_picker }};
+</script>
 
 <script>
 	frappe.ready(() => {
